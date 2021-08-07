@@ -1,19 +1,43 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom'
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import Sidebar from './components/layouts/Sidebar';
+import Topbar from './components/layouts/Topbar';
+import AllStarEvents from './pages/all-star-events/AllStarEvents';
+import Courts from './pages/courts/Courts';
+import Dashboard from './pages/dashboard/Dashboard';
+import Matches from './pages/matches/Matches';
+import Players from './pages/players/Players';
+import Teams from './pages/teams/Teams';
+import Tournaments from './pages/tournaments/Tournaments';
+import Trainers from './pages/trainers/Trainers';
+import Trainings from './pages/trainings/Trainings';
 
 function App() {
     return (
-        <div className="container">
-            <div className="row justify-content-center">
-                <div className="col-md-8">
-                    <div className="card">
-                        <div className="card-header">App Component</div>
+        <>
+        <BrowserRouter>
+            <Sidebar/>
+            <main className="main-content position-relative mt-1 border-radius-lg ps ps--active-y ps--active-x">
+                <Topbar/>
+            <div class="container-fluid py-4">
 
-                        <div className="card-body">I'm an App component!</div>
-                    </div>
-                </div>
+            <Switch>
+                <Route exact path="/home" component={Dashboard} />
+                <Route path="/players" component={Players} />
+                <Route path="/teams" component={Teams} />
+                <Route path="/courts" component={Courts} />
+                <Route path="/matches" component={Matches} />
+                <Route path="/trainers" component={Trainers} />
+                <Route path="/trainings" component={Trainings} />
+                <Route path="/tournaments" component={Tournaments} />
+                <Route path="/all-star-events" component={AllStarEvents} />
+            </Switch>
             </div>
-        </div>
+            </main>
+        </BrowserRouter>
+
+        </>
     );
 }
 
