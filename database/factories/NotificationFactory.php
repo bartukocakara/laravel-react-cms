@@ -2,17 +2,17 @@
 
 namespace Database\Factories;
 
-use App\Models\Model;
+use App\Models\Notification;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
-class TeamFakerFactory extends Factory
+class NotificationFactory extends Factory
 {
     /**
      * The name of the factory's corresponding model.
      *
      * @var string
      */
-    protected $model = Model::class;
+    protected $model = Notification::class;
 
     /**
      * Define the model's default state.
@@ -22,7 +22,9 @@ class TeamFakerFactory extends Factory
     public function definition()
     {
         return [
-            //
+            "name" => $this->faker->name(),
+            "name" => $this->faker->name(),
+            "name" => $this->faker->name(),
         ];
     }
 }

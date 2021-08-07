@@ -5,7 +5,7 @@ namespace Database\Factories;
 use App\Models\Model;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
-class TrainerFakerFactory extends Factory
+class TrainingFakerFactory extends Factory
 {
     /**
      * The name of the factory's corresponding model.
@@ -22,7 +22,9 @@ class TrainerFakerFactory extends Factory
     public function definition()
     {
         return [
-            //
+            "name" => $this->faker->name(),
+            "name" => $this->faker->name(),
+            "name" => $this->faker->name(),
         ];
     }
 }

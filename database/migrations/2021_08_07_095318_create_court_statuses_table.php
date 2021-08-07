@@ -15,6 +15,8 @@ class CreateCourtStatusesTable extends Migration
     {
         Schema::create('court_statuses', function (Blueprint $table) {
             $table->id();
+            $table->string("");
+            $table->string("");
             $table->timestamps();
         });
     }

@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreatePaymentTypesTable extends Migration
+class CreateNotificationsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,12 @@ class CreatePaymentTypesTable extends Migration
      */
     public function up()
     {
-        Schema::create('payment_types', function (Blueprint $table) {
+        Schema::create('notifications', function (Blueprint $table) {
             $table->id();
-            $table->string("");
-            $table->string("");
+            $table->integer("user_id");
+            $table->string("title");
+            $table->string("content");
+            $table->boolean("type", ["MATCH_REQ", "TEAM_JOIN_REQ", "TOURNAMENT_REQ", "TRAINING_REQ", "ALL_STAR_REQ"]);
             $table->timestamps();
         });
     }
@@ -28,6 +30,6 @@ class CreatePaymentTypesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('payment_types');
+        Schema::dropIfExists('notifications');
     }
 }
