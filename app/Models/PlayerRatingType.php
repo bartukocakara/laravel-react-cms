@@ -8,4 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class PlayerRatingType extends Model
 {
     use HasFactory;
+
+    protected $table = "player_rating_types";
+
 }

@@ -8,4 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Referee extends Model
 {
     use HasFactory;
+
+    protected $table = "referees";
+
 }

@@ -8,4 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class MessageType extends Model
 {
     use HasFactory;
+
+    protected $table = "message_types";
+
 }

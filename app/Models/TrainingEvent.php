@@ -8,4 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class TrainingEvent extends Model
 {
     use HasFactory;
+
+    protected $table = "training_events";
+
 }

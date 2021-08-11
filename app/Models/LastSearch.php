@@ -8,4 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class LastSearch extends Model
 {
     use HasFactory;
+
+    protected $table = "last_searches";
+
 }
