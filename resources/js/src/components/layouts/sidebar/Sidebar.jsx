@@ -11,7 +11,7 @@ const Sidebar = () => {
                     </Link>
                 </div>
                 <hr className="horizontal dark mt-0" />
-                <div className="collapse navbar-collapse  ps" id="sidenav-collapse-main">
+                <div className="collapse navbar-collapse  ps sidenav" id="sidenav-collapse-main">
                     <ul className="navbar-nav">
                         <li className="nav-item">
                             <NavLink to="/dashboard" className="nav-link">
@@ -57,6 +57,40 @@ const Sidebar = () => {
                             <NavLink to="all-star-events" className="nav-link" >
                                 <span className="nav-link-text ms-1">All Star Events</span>
                             </NavLink>
+                        </li>
+                        <li class="nav-item">
+                            <a data-bs-toggle="collapse" href="#dashboardsExamples" class="nav-link"  role="button" aria-expanded="true">
+
+                                <span class="nav-link-text ms-1">Players</span>
+                            </a>
+                            <div class="collapse show" id="dashboardsExamples" >
+                                <ul class="nav ms-4 ps-3">
+                                <li class="nav-item active">
+                                    <NavLink to="" class="nav-link active">
+                                    <span class="sidenav-mini-icon"> D </span>
+                                    <span class="sidenav-normal"> Default </span>
+                                    </NavLink>
+                                </li>
+                                <li class="nav-item ">
+                                    <NavLink to="" class="nav-link ">
+                                    <span class="sidenav-mini-icon"> A </span>
+                                    <span class="sidenav-normal"> Automotive </span>
+                                    </NavLink>
+                                </li>
+                                <li class="nav-item ">
+                                    <NavLink to="" class="nav-link ">
+                                    <span class="sidenav-mini-icon"> S </span>
+                                    <span class="sidenav-normal"> Smart Home </span>
+                                    </NavLink>
+                                </li>
+                                <li class="nav-item ">
+                                    <NavLink to="" class="nav-link " >
+                                    <span class="sidenav-mini-icon"> C </span>
+                                    <span class="sidenav-normal"> CRM </span>
+                                    </NavLink>
+                                </li>
+                                </ul>
+                            </div>
                         </li>
                     </ul>
                     </div>

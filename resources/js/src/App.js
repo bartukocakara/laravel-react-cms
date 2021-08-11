@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom'
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import Sidebar from './components/layouts/Sidebar';
+import Sidebar from './components/layouts/sidebar/Sidebar';
 import Topbar from './components/layouts/Topbar';
 import AllStarEvents from './pages/all-star-events/AllStarEvents';
 import Courts from './pages/courts/Courts';
