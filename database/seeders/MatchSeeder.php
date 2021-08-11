@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
+use App\Models\Match;
 
 class MatchSeeder extends Seeder
 {
@@ -13,6 +14,8 @@ class MatchSeeder extends Seeder
      */
     public function run()
     {
-        //
+        Match::factory()
+            ->times(50)
+            ->create();
     }
 }

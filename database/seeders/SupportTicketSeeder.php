@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
+use App\Models\SupportTicket;
 
 class SupportTicketSeeder extends Seeder
 {
@@ -13,6 +14,8 @@ class SupportTicketSeeder extends Seeder
      */
     public function run()
     {
-        //
+        SupportTicket::factory()
+            ->times(50)
+            ->create();
     }
 }

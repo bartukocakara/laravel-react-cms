@@ -3,9 +3,9 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
-use App\Models\City;
+use App\Models\LicenceType;
 
-class CitySeeder extends Seeder
+class LicenceTypeSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -14,7 +14,7 @@ class CitySeeder extends Seeder
      */
     public function run()
     {
-        City::factory()
+        LicenceType::factory()
             ->times(50)
             ->create();
     }

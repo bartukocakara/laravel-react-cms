@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\AllStar;
 use Illuminate\Database\Seeder;
 
 class AllStarSeeder extends Seeder
@@ -13,6 +14,8 @@ class AllStarSeeder extends Seeder
      */
     public function run()
     {
-        //
+        AllStar::factory()
+            ->times(50)
+            ->create();
     }
 }

@@ -13,6 +13,32 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // \App\Models\User::factory(10)->create();
+        $this->call([
+            AllStarSeeder::class,
+            CitySeeder::class,
+            CoachSeeder::class,
+            CommentSeeder::class,
+            CountrySeeder::class,
+            CourtStatusSeeder::class,
+            DistrictSeeder::class,
+            LicenceTypeSeeder::class,
+            ManagerRatingTypeSeeder::class,
+            ManagerSeeder::class,
+            MatchSeeder::class,
+            MessageTypeSeeder::class,
+            NotificationSeeder::class,
+            PaymentTypeSeeder::class,
+            PlayerRatingTypeSeeder::class,
+            PlayerSeeder::class,
+            PrizeSeeder::class,
+            RatingSeeder::class,
+            RefereeSeeder::class,
+            SponsorSeeder::class,
+            SupportTicketSeeder::class,
+            TeamSeeder::class,
+            TournamentSeeder::class,
+            TrainerStatusSeeder::class,
+            VideoSeeder::class,
+            ]);
     }
 }

@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
+use App\Models\PlayerRatingType;
 
 class PlayerRatingTypeSeeder extends Seeder
 {
@@ -13,6 +14,8 @@ class PlayerRatingTypeSeeder extends Seeder
      */
     public function run()
     {
-        //
+        PlayerRatingType::factory()
+            ->times(50)
+            ->create();
     }
 }

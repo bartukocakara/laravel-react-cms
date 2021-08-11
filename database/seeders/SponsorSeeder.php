@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
+use App\Models\Sponsor;
 
 class SponsorSeeder extends Seeder
 {
@@ -13,6 +14,8 @@ class SponsorSeeder extends Seeder
      */
     public function run()
     {
-        //
+        Sponsor::factory()
+            ->times(50)
+            ->create();
     }
 }

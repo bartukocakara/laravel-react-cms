@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
+use App\Models\MessageType;
 
 class MessageTypeSeeder extends Seeder
 {
@@ -13,6 +14,8 @@ class MessageTypeSeeder extends Seeder
      */
     public function run()
     {
-        //
+        MessageType::factory()
+            ->times(50)
+            ->create();
     }
 }

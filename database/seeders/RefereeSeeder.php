@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
+use App\Models\Referee;
 
 class RefereeSeeder extends Seeder
 {
@@ -13,6 +14,8 @@ class RefereeSeeder extends Seeder
      */
     public function run()
     {
-        //
+        Referee::factory()
+            ->times(50)
+            ->create();
     }
 }

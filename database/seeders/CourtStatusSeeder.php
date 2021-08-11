@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
+use App\Models\CourtStatus;
 
 class CourtStatusSeeder extends Seeder
 {
@@ -13,6 +14,8 @@ class CourtStatusSeeder extends Seeder
      */
     public function run()
     {
-        //
+        CourtStatus::factory()
+            ->times(50)
+            ->create();
     }
 }

@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
+use App\Models\Coach;
 
 class CoachSeeder extends Seeder
 {
@@ -13,6 +14,8 @@ class CoachSeeder extends Seeder
      */
     public function run()
     {
-        //
+        Coach::factory()
+            ->times(50)
+            ->create();
     }
 }

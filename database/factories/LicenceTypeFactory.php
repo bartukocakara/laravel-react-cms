@@ -2,17 +2,17 @@
 
 namespace Database\Factories;
 
-use App\Models\Rating;
+use App\Models\LicenceType;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
-class RatingFactory extends Factory
+class LicenceTypeFactory extends Factory
 {
     /**
      * The name of the factory's corresponding model.
      *
      * @var string
      */
-    protected $model = Rating::class;
+    protected $model = LicenceType::class;
 
     /**
      * Define the model's default state.
@@ -22,9 +22,7 @@ class RatingFactory extends Factory
     public function definition()
     {
         return [
-            "name" => $this->faker->name(),
-            "name" => $this->faker->name(),
-            "name" => $this->faker->name(),
+            //
         ];
     }
 }

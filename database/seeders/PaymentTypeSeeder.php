@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
+use App\Models\PaymentType;
 
 class PaymentTypeSeeder extends Seeder
 {
@@ -13,6 +14,8 @@ class PaymentTypeSeeder extends Seeder
      */
     public function run()
     {
-        //
+        PaymentType::factory()
+            ->times(50)
+            ->create();
     }
 }

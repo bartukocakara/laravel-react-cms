@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
+use App\Models\CourtRatingType;
 
 class CourtRatingTypeSeeder extends Seeder
 {
@@ -13,6 +14,8 @@ class CourtRatingTypeSeeder extends Seeder
      */
     public function run()
     {
-        //
+        CourtRatingType::factory()
+            ->times(50)
+            ->create();
     }
 }
