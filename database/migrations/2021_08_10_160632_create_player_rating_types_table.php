@@ -15,6 +15,7 @@ class CreatePlayerRatingTypesTable extends Migration
     {
         Schema::create('player_rating_types', function (Blueprint $table) {
             $table->id();
+            $table->string("name");
             $table->timestamps();
         });
     }

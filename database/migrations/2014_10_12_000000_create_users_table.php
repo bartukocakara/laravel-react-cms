@@ -20,11 +20,12 @@ class CreateUsersTable extends Migration
             $table->string('surname');
             $table->string('email')->unique();
             $table->string('password');
+            $table->tinyInteger('age');
             $table->tinyInteger('phone_code');
             $table->tinyInteger('country_code');
             $table->string('phone');
             $table->text('address');
-            $table->boolean('role', ["PLAYER", "TRAINER", "COURT_HOST", "MANAGER", "COACH"]);
+            $table->boolean('role', ["PLAYER", "TRAINER", "COURT_HOST", "MANAGER", "COACH", "REFEREE"]);
             $table->timestamp('email_verified_at')->nullable();
             $table->rememberToken();
             $table->timestamps();

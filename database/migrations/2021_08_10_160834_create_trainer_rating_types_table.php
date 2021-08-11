@@ -15,6 +15,7 @@ class CreateTrainerRatingTypesTable extends Migration
     {
         Schema::create('trainer_rating_types', function (Blueprint $table) {
             $table->id();
+            $table->string("name");
             $table->timestamps();
         });
     }

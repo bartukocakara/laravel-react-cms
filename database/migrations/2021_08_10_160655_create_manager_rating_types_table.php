@@ -15,6 +15,7 @@ class CreateManagerRatingTypesTable extends Migration
     {
         Schema::create('manager_rating_types', function (Blueprint $table) {
             $table->id();
+            $table->string("name");
             $table->timestamps();
         });
     }

@@ -15,6 +15,7 @@ class CreateCourtRatingTypesTable extends Migration
     {
         Schema::create('court_rating_types', function (Blueprint $table) {
             $table->id();
+            $table->string("name");
             $table->timestamps();
         });
     }
