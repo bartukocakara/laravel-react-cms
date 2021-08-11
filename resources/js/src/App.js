@@ -12,6 +12,7 @@ import Teams from './pages/teams/Teams';
 import Tournaments from './pages/tournaments/Tournaments';
 import Trainers from './pages/trainers/Trainers';
 import Trainings from './pages/trainings/Trainings';
+import "./app.scss";
 
 function App() {
     return (
