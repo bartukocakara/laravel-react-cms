@@ -52,7 +52,7 @@ Route::post("/courtHosts/create", "CourtHostController@createCourtHostPost");
                     //ALL STAR
 Route::get("/allStars", "AllStarController@getAll");
 Route::get("/allStars/create", "AllStarController@createAllStarPage");
-Route::psot("/allStars/create", "AllStarController@createAllStarPost");
+Route::post("/allStars/create", "AllStarController@createAllStarPost");
 
 
                     //REFEREE

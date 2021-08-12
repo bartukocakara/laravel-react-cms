@@ -61,32 +61,38 @@ const Sidebar = () => {
                         <li class="nav-item">
                             <a data-bs-toggle="collapse" href="#dashboardsExamples" class="nav-link"  role="button" aria-expanded="true">
 
-                                <span class="nav-link-text ms-1">Players</span>
+                                <span class="nav-link-text ms-1">Company Info</span>
                             </a>
                             <div class="collapse show" id="dashboardsExamples" >
                                 <ul class="nav ms-4 ps-3">
                                 <li class="nav-item active">
-                                    <NavLink to="" class="nav-link active">
-                                    <span class="sidenav-mini-icon"> D </span>
-                                    <span class="sidenav-normal"> Default </span>
+                                    <NavLink to="faq" class="nav-link active">
+                                    <span class="sidenav-mini-icon"> F </span>
+                                    <span class="sidenav-normal"> Faq </span>
                                     </NavLink>
                                 </li>
-                                <li class="nav-item ">
+                                <li class="nav-item">
+                                    <NavLink to="" class="nav-link ">
+                                    <span class="sidenav-mini-icon"> P </span>
+                                    <span class="sidenav-normal"> Privacy Policies </span>
+                                    </NavLink>
+                                </li>
+                                <li class="nav-item">
                                     <NavLink to="" class="nav-link ">
                                     <span class="sidenav-mini-icon"> A </span>
-                                    <span class="sidenav-normal"> Automotive </span>
+                                    <span class="sidenav-normal"> About Us </span>
                                     </NavLink>
                                 </li>
-                                <li class="nav-item ">
-                                    <NavLink to="" class="nav-link ">
-                                    <span class="sidenav-mini-icon"> S </span>
-                                    <span class="sidenav-normal"> Smart Home </span>
-                                    </NavLink>
-                                </li>
-                                <li class="nav-item ">
+                                <li class="nav-item">
                                     <NavLink to="" class="nav-link " >
-                                    <span class="sidenav-mini-icon"> C </span>
-                                    <span class="sidenav-normal"> CRM </span>
+                                    <span class="sidenav-mini-icon"> S </span>
+                                    <span class="sidenav-normal"> Sponsors </span>
+                                    </NavLink>
+                                </li>
+                                <li class="nav-item">
+                                    <NavLink to="" class="nav-link " >
+                                    <span class="sidenav-mini-icon"> S.S. </span>
+                                    <span class="sidenav-normal"> Service Conditions </span>
                                     </NavLink>
                                 </li>
                                 </ul>
