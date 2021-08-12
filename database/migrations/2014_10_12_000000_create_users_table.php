@@ -25,7 +25,7 @@ class CreateUsersTable extends Migration
             $table->tinyInteger('country_code');
             $table->string('phone');
             $table->text('address');
-            $table->boolean('role', ["PLAYER", "TRAINER", "COURT_HOST", "MANAGER", "COACH", "REFEREE"]);
+            $table->boolean('role', ["SUPER_ADMIN", "ADMIN", "PLAYER", "TRAINER", "TEAM_HOST", "COURT_HOST", "MANAGER", "COACH", "REFEREE"]);
             $table->timestamp('email_verified_at')->nullable();
             $table->rememberToken();
             $table->timestamps();
