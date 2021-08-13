@@ -13,6 +13,9 @@ import Tournaments from './pages/tournaments/Tournaments';
 import Trainers from './pages/trainers/Trainers';
 import Trainings from './pages/trainings/Trainings';
 import "./app.scss";
+import { Provider, useDispatch, useSelector } from 'react-redux';
+
+import store from './redux/store';
 
 function App() {
     return (
@@ -45,5 +48,8 @@ function App() {
 export default App;
 
 if (document.getElementById('app')) {
-    ReactDOM.render(<App />, document.getElementById('app'));
+    ReactDOM.render(
+        <Provider store={store}>
+            <App />
+        </Provider>, document.getElementById('app'));
 }
