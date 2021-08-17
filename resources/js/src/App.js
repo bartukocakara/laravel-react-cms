@@ -24,20 +24,19 @@ function App() {
             <Sidebar/>
             <main className="main-content position-relative mt-1 border-radius-lg ps ps--active-y ps--active-x">
                 <Topbar/>
-            <div class="container-fluid py-4">
-
-            <Switch>
-                <Route exact path="/home" component={Dashboard} />
-                <Route path="/players" component={Players} />
-                <Route path="/teams" component={Teams} />
-                <Route path="/courts" component={Courts} />
-                <Route path="/matches" component={Matches} />
-                <Route path="/trainers" component={Trainers} />
-                <Route path="/trainings" component={Trainings} />
-                <Route path="/tournaments" component={Tournaments} />
-                <Route path="/all-star-events" component={AllStarEvents} />
-            </Switch>
-            </div>
+                <div class="container-fluid py-4">
+                    <Switch>
+                        <Route exact path="/dashboard" component={Dashboard} />
+                        <Route path="/players" component={Players} />
+                        <Route path="/teams" component={Teams} />
+                        <Route path="/courts" component={Courts} />
+                        <Route path="/matches" component={Matches} />
+                        <Route path="/trainers" component={Trainers} />
+                        <Route path="/trainings" component={Trainings} />
+                        <Route path="/tournaments" component={Tournaments} />
+                        <Route path="/all-star-events" component={AllStarEvents} />
+                    </Switch>
+                </div>
             </main>
         </BrowserRouter>
 

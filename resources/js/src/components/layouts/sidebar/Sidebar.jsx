@@ -103,10 +103,8 @@ const Sidebar = () => {
                 <div className="ps__rail-x" style={{ left: "0px", bottom: "0px" }}>
                     <div className="ps__thumb-x" tabindex="0" style= {{left:" 0px", width: "0px"}}></div>
                 </div>
-                <div className="ps__rail-y" style={{top: "0px", height: "722px", right: "0px"}}>
                 <div className="ps__thumb-y" tabindex="0" style={{top: "0px", height: "489px"}}>
 
-                </div>
             </div>
         </aside>
 
