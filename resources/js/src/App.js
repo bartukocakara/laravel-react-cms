@@ -22,7 +22,7 @@ function App() {
         <>
         <BrowserRouter>
             <Sidebar/>
-            <main className="main-content position-relative mt-1 border-radius-lg ps ps--active-y ps--active-x">
+            <main className="main-content mt-1 border-radius-lg">
                 <Topbar/>
                 <div class="container-fluid py-4">
                     <Switch>
