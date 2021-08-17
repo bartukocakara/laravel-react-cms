@@ -7,7 +7,7 @@ const Sidebar = () => {
                 <div className="sidenav-header">
                     <i className="fas fa-times p-3 cursor-pointer text-secondary opacity-5 position-absolute end-0 top-0 d-none d-xl-none" aria-hidden="true" id="iconSidenav"></i>
                     <Link to="" className="navbar-brand m-0" target="_blank">
-                        <h5 className="ms-1 font-weight-bold">Baskethall</h5>
+                        <h5 className="ms-1 font-weight-bold">Baskethall </h5>
                     </Link>
                 </div>
                 <hr className="horizontal dark mt-0" />
@@ -59,11 +59,51 @@ const Sidebar = () => {
                             </NavLink>
                         </li>
                         <li class="nav-item">
-                            <a data-bs-toggle="collapse" href="#dashboardsExamples" class="nav-link"  role="button" aria-expanded="true">
+                            <a data-bs-toggle="collapse" href="#contracts" class="nav-link"  role="button" aria-expanded="true">
+
+                                <span class="nav-link-text ms-1">Contracts</span>
+                            </a>
+                            <div class="collapse" id="contracts" >
+                                <ul class="nav ms-4 ps-3">
+                                <li class="nav-item active">
+                                    <NavLink to="faq" class="nav-link active">
+                                    <span class="sidenav-mini-icon"> F </span>
+                                    <span class="sidenav-normal"> Manager Contracts </span>
+                                    </NavLink>
+                                </li>
+                                <li class="nav-item">
+                                    <NavLink to="" class="nav-link ">
+                                    <span class="sidenav-mini-icon"> P </span>
+                                    <span class="sidenav-normal"> Player Contracts </span>
+                                    </NavLink>
+                                </li>
+                                <li class="nav-item">
+                                    <NavLink to="" class="nav-link ">
+                                    <span class="sidenav-mini-icon"> A </span>
+                                    <span class="sidenav-normal"> Court Contracts </span>
+                                    </NavLink>
+                                </li>
+                                <li class="nav-item">
+                                    <NavLink to="" class="nav-link " >
+                                    <span class="sidenav-mini-icon"> S </span>
+                                    <span class="sidenav-normal"> Sponsors </span>
+                                    </NavLink>
+                                </li>
+                                <li class="nav-item">
+                                    <NavLink to="" class="nav-link " >
+                                    <span class="sidenav-mini-icon"> S.S. </span>
+                                    <span class="sidenav-normal"> Service Conditions </span>
+                                    </NavLink>
+                                </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a data-bs-toggle="collapse" href="#company" class="nav-link"  role="button" aria-expanded="true">
 
                                 <span class="nav-link-text ms-1">Company Info</span>
                             </a>
-                            <div class="collapse show" id="dashboardsExamples" >
+                            <div class="collapse" id="company" >
                                 <ul class="nav ms-4 ps-3">
                                 <li class="nav-item active">
                                     <NavLink to="faq" class="nav-link active">
