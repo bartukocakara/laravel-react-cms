@@ -38,12 +38,8 @@
     <script src="{{ asset('assets/js/plugins/bootstrap-notify.js') }}"></script>
     <script src="{{ asset('assets/js/plugins/choices.min.js') }}"></script>
     <script src="{{ asset('assets/js/plugins/fullcalendar.min.js') }}"></script>
-    <script src="{{ asset('assets/js/plugins/smooth-scrollbar.min.js') }}"></script>
-    <script src="{{ asset('assets/js/plugins/chartjs.min.js') }}"></script>
-    <script src="{{ asset('assets/js/plugins/Chart.extension.js') }}"></script>
     <script src="{{ asset('assets/js/soft-ui-dashboard.js') }}"></script>
     <script src="{{ asset('assets/js/soft-ui-dashboard.js.map') }}"></script>
     <script src="{{ asset('assets/js/soft-ui-dashboard.min.js') }}"></script>
-    <script async defer src="https://buttons.github.io/buttons.js"></script>
-    
+
 </html>

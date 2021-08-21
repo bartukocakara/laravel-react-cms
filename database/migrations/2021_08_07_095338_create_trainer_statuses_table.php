@@ -15,8 +15,8 @@ class CreateTrainerStatusesTable extends Migration
     {
         Schema::create('trainer_statuses', function (Blueprint $table) {
             $table->id();
-            $table->string("");
-            $table->string("");
+            $table->string("name");
+            $table->string("icon_name");
             $table->timestamps();
         });
     }

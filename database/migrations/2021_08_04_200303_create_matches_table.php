@@ -15,10 +15,12 @@ class CreateMatchesTable extends Migration
     {
         Schema::create('matches', function (Blueprint $table) {
             $table->id();
-            $table->string("");
-            $table->string("");
-            $table->string("");
-            $table->string("");
+            $table->string("players");
+            $table->string("teams");
+            $table->string("court");
+            $table->boolean("match_category", ["STANDARD", "TOURNAMENT", "ALL_STAR"]);
+            $table->boolean("status", ["PENDING", "READY", "FAILED", "STARTED", "ENDED"]);
+            $table->boolean("allow_video", [0, 1]);
             $table->timestamps();
         });
     }

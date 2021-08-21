@@ -16,7 +16,6 @@ class CreateCourtAdminsTable extends Migration
         Schema::create('court_admins', function (Blueprint $table) {
             $table->id();
             $table->integer("user_id");
-            $table->string("profile_img");
             $table->string("");
             $table->string("");
             $table->timestamps();

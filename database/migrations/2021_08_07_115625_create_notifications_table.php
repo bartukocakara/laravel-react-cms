@@ -18,7 +18,7 @@ class CreateNotificationsTable extends Migration
             $table->integer("user_id");
             $table->string("title");
             $table->string("content");
-            $table->boolean("type", ["MATCH_REQ", "TEAM_JOIN_REQ", "TOURNAMENT_REQ", "TRAINING_REQ", "ALL_STAR_REQ"]);
+            $table->boolean("type", ["CREATE_MATCH_REQ", "CREATE_TRAINING_REQ", "CREATE_TOURNAMENT_REQ", "JOIN_MATCH_REQ", "JOIN_TEAM_REQ", "JOIN_TOURNAMENT_REQ", "JOIN_TRAINING_REQ", "JOIN_ALL_STAR_REQ"]);
             $table->timestamps();
         });
     }

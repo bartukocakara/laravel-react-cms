@@ -20,7 +20,7 @@ class CreateTeamsTable extends Migration
             $table->integer("city_id");
             $table->integer("district_id");
             $table->string("name");
-            $table->string("privacy_status");
+            $table->text("privacy_status");
             $table->string("");
             $table->timestamps();
         });

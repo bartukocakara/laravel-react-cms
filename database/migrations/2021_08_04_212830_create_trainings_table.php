@@ -15,8 +15,11 @@ class CreateTrainingsTable extends Migration
     {
         Schema::create('trainings', function (Blueprint $table) {
             $table->id();
-            $table->string("");
-            $table->string("");
+            $table->string("trainers");
+            $table->string("players");
+            $table->string("courts");
+            $table->string("date");
+            $table->string("status", ["PENDING", "READY", "FAILED", "COMPLETED"]);
             $table->timestamps();
         });
     }

@@ -16,7 +16,6 @@ class CreateRefereesTable extends Migration
         Schema::create('referees', function (Blueprint $table) {
             $table->id();
             $table->integer("user_id");
-            $table->string("profile_img");
             $table->timestamps();
         });
     }
