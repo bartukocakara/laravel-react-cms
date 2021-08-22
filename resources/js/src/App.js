@@ -22,7 +22,7 @@ function App() {
         <>
         <BrowserRouter>
             <Sidebar/>
-            <main className=" mt-1 border-radius-lg">
+            <main className="mt-1 border-radius-lg">
                 <Topbar/>
                 <div class="container-fluid py-4">
                     <Switch>
