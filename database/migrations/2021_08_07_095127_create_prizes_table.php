@@ -16,8 +16,10 @@ class CreatePrizesTable extends Migration
         Schema::create('prizes', function (Blueprint $table) {
             $table->id();
             $table->string("name");
-            $table->text("description");
+            $table->text("content");
             $table->string("icon_name");
+            $table->string("avatar");
+            $table->string("images");
             $table->timestamps();
         });
     }

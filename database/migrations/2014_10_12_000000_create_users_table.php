@@ -15,17 +15,19 @@ class CreateUsersTable extends Migration
     {
         Schema::create('users', function (Blueprint $table) {
             $table->id();
+            $table->integer('licence_id');
+            $table->integer('country_id');
+            $table->integer('city_id');
+            $table->integer('district_id');
             $table->string('name');
             $table->string('second_name')->nullable(true);
             $table->string('surname');
             $table->string('avatar');
+            $table->string('slug');
             $table->string('email')->unique();
             $table->string('password');
             $table->tinyInteger('age');
             $table->tinyInteger('phone_code');
-            $table->tinyInteger('country_id');
-            $table->integer('city_id');
-            $table->integer('district_id');
             $table->string('phone');
             $table->text('address');
             $table->boolean('role', ["SUPER_ADMIN", "ADMIN", "PLAYER", "TRAINER", "TEAM_HOST", "COURT_HOST", "MANAGER", "COACH", "REFEREE"]);
