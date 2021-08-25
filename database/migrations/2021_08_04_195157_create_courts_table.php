@@ -15,10 +15,14 @@ class CreateCourtsTable extends Migration
     {
         Schema::create('courts', function (Blueprint $table) {
             $table->id();
-            $table->string("");
-            $table->string("");
-            $table->string("");
-            $table->string("");
+            $table->integer("user_id");
+            $table->integer("comment_id");
+            $table->integer("country_id");
+            $table->integer("city_id");
+            $table->integer("district_id");
+            $table->string("name");
+            $table->text("address");
+            $table->text("qualifications");
             $table->timestamps();
         });
     }
