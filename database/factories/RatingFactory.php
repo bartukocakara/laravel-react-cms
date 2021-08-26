@@ -22,9 +22,9 @@ class RatingFactory extends Factory
     public function definition()
     {
         return [
-            "name" => $this->faker->name(),
-            "name" => $this->faker->name(),
-            "name" => $this->faker->name(),
+            "rating_type" => $this->faker->name(),
+            "title" => $this->faker->name(),
+            "content" => $this->faker->name(),
         ];
     }
 }

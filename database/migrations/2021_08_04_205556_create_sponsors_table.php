@@ -16,9 +16,9 @@ class CreateSponsorsTable extends Migration
         Schema::create('sponsors', function (Blueprint $table) {
             $table->id();
             $table->integer("currency_id");
+            $table->integer("sector_id");
             $table->string("title");
             $table->string("img");
-            $table->string("sector");
             $table->decimal("amount", 15, 2);
             $table->enum("recurring_status", ["MONTHLY", "YEARLY"]);
             $table->string("is_active", [0, 1]);

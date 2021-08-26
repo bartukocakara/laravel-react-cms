@@ -19,6 +19,7 @@ class CreateUsersTable extends Migration
             $table->integer('country_id');
             $table->integer('city_id');
             $table->integer('district_id');
+            $table->integer('membership_type_id');
             $table->string('name');
             $table->string('second_name')->nullable(true);
             $table->string('surname');

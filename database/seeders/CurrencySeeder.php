@@ -3,9 +3,9 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
-use App\Models\Licence;
+use App\Models\Currency;
 
-class LicenceSeeder extends Seeder
+class CurrencySeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -14,7 +14,7 @@ class LicenceSeeder extends Seeder
      */
     public function run()
     {
-        Licence::factory()
+        Currency::factory()
             ->times(50)
             ->create();
     }

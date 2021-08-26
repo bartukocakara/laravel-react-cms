@@ -22,9 +22,13 @@ class SponsorFakerFactory extends Factory
     public function definition()
     {
         return [
-            "name" => $this->faker->name(),
-            "name" => $this->faker->name(),
-            "name" => $this->faker->name(),
+            "currency_id" => $this->faker->name(),
+            "sector_id" => $this->faker->name(),
+            "title" => $this->faker->name(),
+            "img" => $this->faker->name(),
+            "amount" => $this->faker->name(),
+            "recurring_status" => $this->faker->name(),
+            "is_active" => $this->faker->name(),
         ];
     }
 }

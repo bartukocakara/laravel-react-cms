@@ -20,6 +20,7 @@ class DatabaseSeeder extends Seeder
             CommentSeeder::class,
             CountrySeeder::class,
             CourtStatusSeeder::class,
+            CurrencySeeder::class,
             DistrictSeeder::class,
             LicenceTypeSeeder::class,
             ManagerRatingTypeSeeder::class,

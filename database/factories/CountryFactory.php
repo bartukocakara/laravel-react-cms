@@ -23,8 +23,9 @@ class CountryFactory extends Factory
     {
         return [
             "name" => $this->faker->name(),
-            "name" => $this->faker->name(),
-            "name" => $this->faker->name(),
+            "flag_svg" => $this->faker->name(),
+            "str_code" => $this->faker->name(),
+            "int_code" => $this->faker->name(),
         ];
     }
 }

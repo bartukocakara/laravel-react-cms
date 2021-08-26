@@ -22,9 +22,9 @@ class CommentFactory extends Factory
     public function definition()
     {
         return [
-            "name" => $this->faker->name(),
-            "name" => $this->faker->name(),
-            "name" => $this->faker->name(),
+            "title" => $this->faker->name(),
+            "message" => $this->faker->name(),
+            "type" => $this->faker->name(),
         ];
     }
 }

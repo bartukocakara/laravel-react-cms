@@ -15,6 +15,12 @@ class CreateCompanyInfosTable extends Migration
     {
         Schema::create('company_infos', function (Blueprint $table) {
             $table->id();
+            $table->string("country_id");
+            $table->string("city_id");
+            $table->string("district_id");
+            $table->string("name");
+            $table->text("address");
+            $table->string("phone");
             $table->timestamps();
         });
     }

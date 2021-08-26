@@ -3,9 +3,8 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
-use App\Models\Licence;
 
-class LicenceSeeder extends Seeder
+class SectorSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -14,8 +13,6 @@ class LicenceSeeder extends Seeder
      */
     public function run()
     {
-        Licence::factory()
-            ->times(50)
-            ->create();
+        //
     }
 }

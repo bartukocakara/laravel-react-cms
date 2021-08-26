@@ -2,17 +2,17 @@
 
 namespace Database\Factories;
 
-use App\Models\District;
+use App\Models\Contract;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
-class DistrictFactory extends Factory
+class ContractFactory extends Factory
 {
     /**
      * The name of the factory's corresponding model.
      *
      * @var string
      */
-    protected $model = District::class;
+    protected $model = Contract::class;
 
     /**
      * Define the model's default state.
@@ -22,9 +22,9 @@ class DistrictFactory extends Factory
     public function definition()
     {
         return [
-            "city_id" => $this->faker->name(),
             "code" => $this->faker->name(),
-            "name" => $this->faker->name(),
+            "title" => $this->faker->name(),
+            "content" => $this->faker->name(),
         ];
     }
 }

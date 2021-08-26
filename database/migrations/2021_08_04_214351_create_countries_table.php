@@ -17,8 +17,8 @@ class CreateCountriesTable extends Migration
             $table->id();
             $table->string("name");
             $table->string("flag_svg");
-            $table->string("string_code");
-            $table->integer("number_code");
+            $table->string("str_code");
+            $table->integer("int_code");
             $table->timestamps();
         });
     }

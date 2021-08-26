@@ -23,8 +23,10 @@ class PrizeFactory extends Factory
     {
         return [
             "name" => $this->faker->name(),
-            "name" => $this->faker->name(),
-            "name" => $this->faker->name(),
+            "content" => $this->faker->name(),
+            "icon_name" => $this->faker->name(),
+            "avatar" => $this->faker->name(),
+            "images" => $this->faker->name(),
         ];
     }
 }

@@ -19,7 +19,7 @@ const Sidebar = () => {
                             </NavLink>
                         </li>
                         <li className="nav-item">
-                            <NavLink to="players" className="nav-link  " >
+                            <NavLink to="players" className="nav-link" >
                                 <span className="nav-link-text ms-1">Players</span>
                             </NavLink>
                         </li>

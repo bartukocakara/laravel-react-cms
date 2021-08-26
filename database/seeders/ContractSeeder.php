@@ -4,7 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
 
-class CourtContractSeeder extends Seeder
+class ContractSeeder extends Seeder
 {
     /**
      * Run the database seeds.

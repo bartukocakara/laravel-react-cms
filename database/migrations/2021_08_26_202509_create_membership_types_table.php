@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateCourtContractsTable extends Migration
+class CreateMembershipTypesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class CreateCourtContractsTable extends Migration
      */
     public function up()
     {
-        Schema::create('court_contracts', function (Blueprint $table) {
+        Schema::create('membership_types', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
         });
@@ -26,6 +26,6 @@ class CreateCourtContractsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('court_contracts');
+        Schema::dropIfExists('membership_types');
     }
 }

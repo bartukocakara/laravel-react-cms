@@ -22,7 +22,12 @@ class SubscriptionFactory extends Factory
     public function definition()
     {
         return [
-            //
+            "currency_id" => $this->faker->name(),
+            "code" => $this->faker->name(),
+            "title" => $this->faker->name(),
+            "description" => $this->faker->name(),
+            "status" => $this->faker->name(),
+            "amount" => $this->faker->name(),
         ];
     }
 }
