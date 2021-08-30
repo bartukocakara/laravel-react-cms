@@ -10,7 +10,7 @@
   --bs-purple: #6f42c1;
   --bs-pink: #d63384;
   --bs-red: #F56565;
-  --bs-orange: #fd7e14;
+  --bs-orange: #FA8602 !important;
   --bs-yellow: #FBD38D;
   --bs-green: #81E6D9;
   --bs-teal: #20c997;
@@ -22,7 +22,7 @@
   --bs-secondary: #8392AB;
   --bs-success: #82d616;
   --bs-info: #17c1e8;
-  --bs-warning: #fbcf33;
+  --bs-warning: #FA8602 !important;
   --bs-danger: #ea0606;
   --bs-light: #e9ecef;
   --bs-dark: #344767;

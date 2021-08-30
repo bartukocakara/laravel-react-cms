@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom'
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import Sidebar from './components/layouts/sidebar/Sidebar';
+import Sidebar from './components/layouts/Sidebar';
 import Topbar from './components/layouts/Topbar';
 import AllStarEvents from './pages/all-star-events/AllStarEvents';
 import Courts from './pages/courts/Courts';
@@ -22,7 +22,7 @@ function App() {
         <>
         <BrowserRouter>
             <Sidebar/>
-            <main className="mt-1 border-radius-lg">
+            <main className="main-content position-relative max-height-vh-100 h-100 border-radius-lg ps ps--active-y">
                 <Topbar/>
                 <div class="container-fluid py-4">
                     <Switch>

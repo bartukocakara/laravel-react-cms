@@ -14,7 +14,7 @@
         <link rel="stylesheet" href="{{ asset('assets/css/soft-ui-dashboard.css.map') }}">
         <link rel="stylesheet" href="{{ asset('assets/css/soft-ui-dashboard.min.css') }}">
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-
+        <link href="https://use.fontawesome.com/releases/v5.12.0/css/all.css" rel="stylesheet">
     </head>
     <body class="g-sidenav-show  bg-gray-100">
         <div id="app">
