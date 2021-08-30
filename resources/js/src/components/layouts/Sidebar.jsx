@@ -8,7 +8,8 @@ import { GiBasketballBasket, GiTrophyCup } from "react-icons/gi";
 import { RiTeamFill, RiDashboardFill } from "react-icons/ri";
 import { AiFillGift } from "react-icons/ai";
 import { FiSettings } from "react-icons/fi";
-
+import { BiSupport } from "react-icons/bi";
+import { AiFillNotification } from "react-icons/ai";
 const Sidebar = () => {
 
 
@@ -152,8 +153,13 @@ const Sidebar = () => {
                             </NavLink>
                         </li>
                         <li className="nav-item">
-                            <NavLink to="teams" className="nav-link" >
-                                <span className="nav-link-text ms-1"><RiTeamFill/> Teams</span>
+                            <NavLink to="support" className="nav-link" >
+                                <span className="nav-link-text ms-1"><BiSupport/> Support Tickets</span>
+                            </NavLink>
+                        </li>
+                        <li className="nav-item">
+                            <NavLink to="notifications" className="nav-link" >
+                                <span className="nav-link-text ms-1"><AiFillNotification/> Notifications</span>
                             </NavLink>
                         </li>
                         <li className="nav-item">
