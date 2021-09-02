@@ -22,7 +22,7 @@ class CityFactory extends Factory
     public function definition()
     {
         return [
-            "country_id" => $this->faker->name(),
+            "country_id" => $this->faker->numberBetween(01, 500),
             "code" => $this->faker->name(),
             "name" => $this->faker->name(),
         ];

@@ -15,7 +15,25 @@ class CurrencySeeder extends Seeder
     public function run()
     {
         Currency::factory()
-            ->times(50)
+            ->times(3)
             ->create();
+        Currency::insert([
+            [
+                "name" => "Dollar",
+                "code" => "USD",
+                "symbol" => "$"
+            ],
+            [
+                "name" => "Euro",
+                "code" => "EUR",
+                "symbol" => "€"
+            ],
+            [
+                "name" => "Turkish Lira",
+                "code" => "TRY",
+                "symbol" => "₺"
+            ],
+        ]);
+
     }
 }

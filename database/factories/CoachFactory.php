@@ -23,7 +23,7 @@ class CoachFactory extends Factory
     {
         return [
             "user_id" => $this->faker->name(),
-            "comment_id" => $this->faker->name(),
+            "comment_id" => $this->faker->sentence(10, true),
             "rewards" => $this->faker->name(),
             "settings" => $this->faker->name(),
             "name" => $this->faker->name(),

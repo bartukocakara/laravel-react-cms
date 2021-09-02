@@ -9,7 +9,8 @@ import { RiTeamFill, RiDashboardFill } from "react-icons/ri";
 import { AiFillGift } from "react-icons/ai";
 import { FiSettings } from "react-icons/fi";
 import { BiSupport } from "react-icons/bi";
-import { AiFillNotification } from "react-icons/ai";
+import { AiFillNotification, AiOutlineUsergroupAdd, AiOutlineFileProtect } from "react-icons/ai";
+
 const Sidebar = () => {
 
 
@@ -163,14 +164,33 @@ const Sidebar = () => {
                             </NavLink>
                         </li>
                         <li className="nav-item">
-                            <NavLink to="gifts" className="nav-link" >
-                                <span className="nav-link-text ms-1"><AiFillGift/> Gifts</span>
+                            <NavLink to="subscriptions" className="nav-link" >
+                                <span className="nav-link-text ms-1"><AiOutlineUsergroupAdd/> Subscriptions</span>
                             </NavLink>
                         </li>
                         <li className="nav-item">
-                            <NavLink to="prizes" className="nav-link" >
-                                <span className="nav-link-text ms-1"><GiTrophyCup/> Prizes</span>
+                            <NavLink to="licences" className="nav-link" >
+                                <span className="nav-link-text ms-1"><AiOutlineFileProtect/> Licences</span>
                             </NavLink>
+                        </li>
+                        <li className="nav-item">
+                            <a data-bs-toggle="collapse" href="#givings" className="nav-link"  role="button" aria-expanded="true">
+                                <span className="nav-link-text ms-1"><AiFillGift/> Giving</span>
+                            </a>
+                            <div className="collapse" id="givings" >
+                                <ul className="nav ms-4 ps-3">
+                                    <li className="nav-item">
+                                        <NavLink to="prizes" className="nav-link" >
+                                            <span className="nav-link-text ms-1"><GiTrophyCup/> Prizes</span>
+                                        </NavLink>
+                                    </li>
+                                    <li className="nav-item">
+                                        <NavLink to="gifts" className="nav-link" >
+                                            <span className="nav-link-text ms-1"><AiFillGift/> Gifts</span>
+                                        </NavLink>
+                                    </li>
+                                </ul>
+                            </div>
                         </li>
                         <li className="nav-item">
                             <a data-bs-toggle="collapse" href="#contracts" className="nav-link"  role="button" aria-expanded="true">

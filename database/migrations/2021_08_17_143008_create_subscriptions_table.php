@@ -15,10 +15,12 @@ class CreateSubscriptionsTable extends Migration
     {
         Schema::create('subscriptions', function (Blueprint $table) {
             $table->id();
-            $table->string("currency_id");
-            $table->string("code");
-            $table->string("title");
-            $table->string("description");
+            $table->integer("currency_id");
+            $table->string("code", 3);
+            $table->string("title", 50);
+            $table->text("description");
+            $table->decimal('total', 15, 2);
+            $table->decimal('sub_total', 15, 2);
             $table->enum("status", [0, 1]);
             $table->integer("amount");
 

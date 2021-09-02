@@ -3,14 +3,6 @@ import ReactDOM from 'react-dom'
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Sidebar from './components/layouts/Sidebar';
 import Topbar from './components/layouts/Topbar';
-import AllStarEvents from './pages/all-star-events/AllStarEvents';
-import Courts from './pages/courts/Courts';
-import Matches from './pages/matches/Matches';
-import Players from './pages/players/Players';
-import Teams from './pages/teams/Teams';
-import Tournaments from './pages/tournaments/Tournaments';
-import Trainers from './pages/trainers/Trainers';
-import Trainings from './pages/trainings/Trainings';
 import "./app.scss";
 import { Provider, useDispatch, useSelector } from 'react-redux';
 

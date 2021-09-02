@@ -15,6 +15,13 @@ class CreateManagerContractsTable extends Migration
     {
         Schema::create('manager_contracts', function (Blueprint $table) {
             $table->id();
+            $table->string("manager_id");
+            $table->string("title");
+            $table->text("content");
+            $table->enum("type", ["TEAM", "PLAYER"]);
+            $table->enum("status", ["PENDING", "SUCCESS", "FAILED", "CANCELED"]);
+            $table->date("from_date");
+            $table->date("to_date");
             $table->timestamps();
         });
     }

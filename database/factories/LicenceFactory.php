@@ -22,7 +22,10 @@ class LicenceFactory extends Factory
     public function definition()
     {
         return [
-            //
+            "code" => $this->faker->randomElement("PL", "CO", "MA", "TE", "TR"),
+            "name" => $this->faker->randomElement("Player", "Coach", "Manager", "Team", "Trainer"),
+            "description" => $this->faker->sentence(5, true),
+            "status" => $this->faker->randomElement(1, 0),
         ];
     }
 }

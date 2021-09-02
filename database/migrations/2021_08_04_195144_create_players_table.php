@@ -17,8 +17,7 @@ class CreatePlayersTable extends Migration
             $table->id();
             $table->integer("user_id");
             $table->string("positions");
-            $table->string("settings");
-            $table->string("name");
+            $table->json("settings");
             $table->string("prize_earnings");
             $table->timestamps();
         });

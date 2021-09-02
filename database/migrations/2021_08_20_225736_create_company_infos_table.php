@@ -20,6 +20,7 @@ class CreateCompanyInfosTable extends Migration
             $table->string("district_id");
             $table->string("name");
             $table->text("address");
+            $table->string("phone_code");
             $table->string("phone");
             $table->timestamps();
         });
