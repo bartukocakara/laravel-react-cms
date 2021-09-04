@@ -2,17 +2,17 @@
 
 namespace Database\Factories;
 
-use App\Models\CourtRatingType;
+use App\Models\Transaction;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
-class CourtRatingTypeFactory extends Factory
+class TransactionFactory extends Factory
 {
     /**
      * The name of the factory's corresponding model.
      *
      * @var string
      */
-    protected $model = CourtRatingType::class;
+    protected $model = Transaction::class;
 
     /**
      * Define the model's default state.
@@ -22,9 +22,7 @@ class CourtRatingTypeFactory extends Factory
     public function definition()
     {
         return [
-            "name" => $this->faker->name(),
-            "name" => $this->faker->name(),
-            "name" => $this->faker->name(),
+            //
         ];
     }
 }

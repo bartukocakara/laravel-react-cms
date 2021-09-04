@@ -18,9 +18,13 @@ class CreateMatchesTable extends Migration
             $table->string("players");
             $table->string("teams");
             $table->string("court");
-            $table->boolean("match_category", ["STANDARD", "TOURNAMENT", "ALL_STAR"]);
-            $table->boolean("status", ["PENDING", "READY", "FAILED", "STARTED", "ENDED"]);
-            $table->boolean("allow_video", [0, 1]);
+            $table->integer("rating_id");
+            $table->enum("match_category", ["STANDARD", "TOURNAMENT", "ALL_STAR"]);
+            $table->json("player_request_statuses")->comment('["user_id" => "1", "status = 0"], ...');
+            $table->json("team_request_statuses")->comment('["team_id" => "1", "status = 0"], ...');
+            $table->enum("status", ["PENDING", "READY", "FAILED", "STARTED", "ENDED"]);
+            $table->enum("allow_video", [0, 1]);
+            $table->json("settings");
             $table->timestamps();
         });
     }

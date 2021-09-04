@@ -15,6 +15,12 @@ class CreateSubModulesTable extends Migration
     {
         Schema::create('sub_modules', function (Blueprint $table) {
             $table->id();
+            $table->integer("module_id");
+            $table->string("name");
+            $table->string("controller_name");
+            $table->string("icon");
+            $table->string("sequence");
+            $table->string("default_method");
             $table->timestamps();
         });
     }

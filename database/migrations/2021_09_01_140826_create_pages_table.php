@@ -15,6 +15,11 @@ class CreatePagesTable extends Migration
     {
         Schema::create('pages', function (Blueprint $table) {
             $table->id();
+            $table->integer("module_id");
+            $table->integer("sub_module_id");
+            $table->string("name");
+            $table->string("method_name");
+            $table->enum("available_to_company", [0, 1]);
             $table->timestamps();
         });
     }

@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\CourtRatingType;
+use App\Models\Survey;
 use Illuminate\Http\Request;
 
-class CourtRatingTypeController extends Controller
+class SurveyController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -41,10 +41,10 @@ class CourtRatingTypeController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\CourtRatingType  $courtRatingType
+     * @param  \App\Models\Survey  $survey
      * @return \Illuminate\Http\Response
      */
-    public function show(CourtRatingType $courtRatingType)
+    public function show(Survey $survey)
     {
         //
     }
@@ -52,10 +52,10 @@ class CourtRatingTypeController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\CourtRatingType  $courtRatingType
+     * @param  \App\Models\Survey  $survey
      * @return \Illuminate\Http\Response
      */
-    public function edit(CourtRatingType $courtRatingType)
+    public function edit(Survey $survey)
     {
         //
     }
@@ -64,10 +64,10 @@ class CourtRatingTypeController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\CourtRatingType  $courtRatingType
+     * @param  \App\Models\Survey  $survey
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, CourtRatingType $courtRatingType)
+    public function update(Request $request, Survey $survey)
     {
         //
     }
@@ -75,10 +75,10 @@ class CourtRatingTypeController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\CourtRatingType  $courtRatingType
+     * @param  \App\Models\Survey  $survey
      * @return \Illuminate\Http\Response
      */
-    public function destroy(CourtRatingType $courtRatingType)
+    public function destroy(Survey $survey)
     {
         //
     }

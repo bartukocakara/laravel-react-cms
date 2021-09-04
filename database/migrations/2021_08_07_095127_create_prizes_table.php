@@ -17,7 +17,7 @@ class CreatePrizesTable extends Migration
             $table->id();
             $table->string("name");
             $table->text("content");
-            $table->string("avatar");
+            $table->string("small_image");
             $table->string("images");
             $table->timestamps();
         });

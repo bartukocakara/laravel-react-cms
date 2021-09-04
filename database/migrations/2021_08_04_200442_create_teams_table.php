@@ -16,13 +16,16 @@ class CreateTeamsTable extends Migration
         Schema::create('teams', function (Blueprint $table) {
             $table->id();
             $table->integer("team_host");
-            $table->text("player_list");
+            $table->string("player_list")->comment("players ids = 23|35|78|...");
             $table->integer("country_id");
             $table->integer("city_id");
             $table->integer("district_id");
             $table->string("name");
-            $table->text("privacy_status");
+            $table->json("privacy_status");
             $table->string("rewards");
+            $table->json("player_request_statuses")->comment('["user_id" => "1", "status = 0"], ...');
+            $table->string("status", ["PENDING", "CREATED", "CANCELED", "FAILED"]);
+            $table->json("settings");
             $table->timestamps();
         });
     }

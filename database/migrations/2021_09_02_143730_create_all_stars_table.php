@@ -15,6 +15,15 @@ class CreateAllStars extends Migration
     {
         Schema::create('all_stars', function (Blueprint $table) {
             $table->id();
+            $table->integer("court_id");
+            $table->string("players")->comment("player_ids : 123, 232, 54");
+            $table->string("gifts")->comment("gift_ids : 2, 5, 4, 10");
+            $table->string("prizes")->comment("prize_ids : 10, 12, 4, 1");
+            $table->string("teams")->comment("team_ids : 103, 1223, 411, 156");
+            $table->string("content");
+            $table->string("referees")->comment("referee_ids : 232, 29, 411, 156");;
+            $table->enum("status", ["PENDING", "STARTED", "ENDED", "CANCELED", "FAILED"]);
+            $table->date("event_date");
             $table->timestamps();
         });
     }

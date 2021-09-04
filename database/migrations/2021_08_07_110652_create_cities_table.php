@@ -18,7 +18,6 @@ class CreateCitiesTable extends Migration
             $table->integer("country_id");
             $table->string("code");
             $table->string("name");
-            $table->timestamps();
         });
     }
 

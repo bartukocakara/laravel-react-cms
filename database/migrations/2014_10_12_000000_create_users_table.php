@@ -15,7 +15,6 @@ class CreateUsersTable extends Migration
     {
         Schema::create('users', function (Blueprint $table) {
             $table->id();
-            $table->integer('licence_id');
             $table->integer('country_id');
             $table->integer('city_id');
             $table->integer('district_id');
@@ -27,11 +26,14 @@ class CreateUsersTable extends Migration
             $table->string('slug');
             $table->string('email')->unique();
             $table->string('password');
+            $table->string('settings');
+            $table->string('licences');
+            $table->string("rewards");
             $table->tinyInteger('age');
             $table->tinyInteger('phone_code');
             $table->string('phone');
             $table->text('address');
-            $table->boolean('role', ["SUPER_ADMIN", "ADMIN", "PLAYER", "TRAINER", "TEAM_HOST", "COURT_HOST", "MANAGER", "COACH", "REFEREE"])->comment(' User Roles')->default(null)->nullable(true);
+            $table->enum('role', ["SUPER_ADMIN", "ADMIN", "PLAYER", "TRAINER", "TEAM_HOST", "COURT_HOST", "MANAGER", "COACH", "REFEREE"])->comment(' User Roles')->default(null)->nullable(true);
             $table->timestamp('email_verified_at')->nullable();
             $table->rememberToken();
             $table->timestamps();

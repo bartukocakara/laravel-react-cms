@@ -18,7 +18,7 @@ class CreatePlayerContractsTable extends Migration
             $table->string("player_id");
             $table->string("title");
             $table->text("content");
-            $table->enum("status", ["PENDING", "SUCCESS", "FAILED", "CANCELED"]);
+            $table->enum("status", ["PENDING", "COMPLETED", "FAILED", "CANCELED"]);
             $table->timestamps();
         });
     }

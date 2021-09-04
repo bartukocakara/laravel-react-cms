@@ -18,7 +18,6 @@ class CreateDistrictsTable extends Migration
             $table->integer("city_id");
             $table->string("code");
             $table->string("name");
-            $table->timestamps();
         });
     }
 

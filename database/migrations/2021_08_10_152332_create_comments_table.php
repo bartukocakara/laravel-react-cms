@@ -17,7 +17,7 @@ class CreateCommentsTable extends Migration
             $table->id();
             $table->string("title");
             $table->text("message");
-            $table->enum("type", ["BAD", "GOOD"]);
+            $table->enum("type", ["VERY_BAD", "BAD", "NEEDS_IMPROVE", "GOOD", "VERY_GOOD"]);
             $table->timestamps();
         });
     }

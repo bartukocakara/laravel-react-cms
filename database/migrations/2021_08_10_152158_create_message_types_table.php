@@ -15,6 +15,8 @@ class CreateMessageTypesTable extends Migration
     {
         Schema::create('message_types', function (Blueprint $table) {
             $table->id();
+            $table->enum("code", ["TEAM", "PRIVATE", "MATCH"]);
+            $table->string("key")->comment("min 15 char string : 231321ABFS13131SSGFFUE");
             $table->timestamps();
         });
     }

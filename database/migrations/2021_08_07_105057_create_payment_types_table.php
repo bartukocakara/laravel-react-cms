@@ -15,10 +15,10 @@ class CreatePaymentTypesTable extends Migration
     {
         Schema::create('payment_types', function (Blueprint $table) {
             $table->id();
-            $table->string("code");
+            $table->enum("code", ["TRA", "MAT", "TOU", "MAN", "ALS"]);
             $table->string("name");
-            $table->string("description");
-            $table->string("status");
+            $table->text("description");
+            $table->enum("status", [0, 1]);
             $table->string("icon_name");
             $table->timestamps();
         });

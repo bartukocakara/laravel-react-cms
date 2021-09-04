@@ -2,17 +2,17 @@
 
 namespace Database\Factories;
 
-use App\Models\TrainerRatingType;
+use App\Models\Survey;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
-class TrainerRatingTypeFactory extends Factory
+class SurveyFactory extends Factory
 {
     /**
      * The name of the factory's corresponding model.
      *
      * @var string
      */
-    protected $model = TrainerRatingType::class;
+    protected $model = Survey::class;
 
     /**
      * Define the model's default state.
@@ -22,9 +22,7 @@ class TrainerRatingTypeFactory extends Factory
     public function definition()
     {
         return [
-            "name" => $this->faker->name(),
-            "name" => $this->faker->name(),
-            "name" => $this->faker->name(),
+            //
         ];
     }
 }

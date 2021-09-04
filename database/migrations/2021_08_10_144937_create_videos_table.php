@@ -15,7 +15,7 @@ class CreateVideosTable extends Migration
     {
         Schema::create('videos', function (Blueprint $table) {
             $table->id();
-            $table->string("user_id");
+            $table->enum("event_code", ["MA:match_id", "TO:tournament_id", "AL:allstar_id", "TR:training_id"]);
             $table->string("title");
             $table->string("description");
             $table->timestamps();

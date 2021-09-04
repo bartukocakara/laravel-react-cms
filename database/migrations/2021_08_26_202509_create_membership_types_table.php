@@ -15,8 +15,10 @@ class CreateMembershipTypesTable extends Migration
     {
         Schema::create('membership_types', function (Blueprint $table) {
             $table->id();
+            $table->string("code")->comment(["PL" => "Player", "CO" => "Coach", "MA" => "Manager", "TR" => "Trainer", "CO" => "Coach"]);
             $table->string("name");
             $table->text("description");
+            $table->enum("status", [0, 1]);
             $table->timestamps();
         });
     }

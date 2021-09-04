@@ -2,18 +2,16 @@ import React from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import { HiUsers } from "react-icons/hi";
 import { FaBasketballBall, FaFileContract } from "react-icons/fa";
-import { MdEventAvailable } from "react-icons/md";
+import { MdEventAvailable, MdCardMembership } from "react-icons/md";
 import { BsFillInfoCircleFill } from "react-icons/bs";
-import { GiBasketballBasket, GiTrophyCup } from "react-icons/gi";
+import { GiBasketballBasket } from "react-icons/gi";
 import { RiTeamFill, RiDashboardFill } from "react-icons/ri";
 import { AiFillGift } from "react-icons/ai";
 import { FiSettings } from "react-icons/fi";
 import { BiSupport } from "react-icons/bi";
-import { AiFillNotification, AiOutlineUsergroupAdd, AiOutlineFileProtect } from "react-icons/ai";
+import { AiFillNotification, AiOutlineUsergroupAdd, AiOutlineFileProtect, AiFillStar } from "react-icons/ai";
 
 const Sidebar = () => {
-
-
     return (
             <aside className="sidenav navbar navbar-vertical navbar-expand-xs border-0 border-radius-xl my-3 fixed-start ms-3 " >
                 <div className="sidenav-header">
@@ -144,6 +142,46 @@ const Sidebar = () => {
                             </div>
                         </li>
                         <li className="nav-item">
+                            <a data-bs-toggle="collapse" href="#membership-types" className="nav-link"  role="button" aria-expanded="true">
+
+                                <span className="nav-link-text ms-1"><MdCardMembership/> Membership Types</span>
+                            </a>
+                            <div className="collapse" id="membership-types" >
+                                <ul className="nav ms-4 ps-3">
+                                    <li className="nav-item">
+                                        <NavLink to="player-membership-types" className="nav-link">
+                                        <span className="sidenav-mini-icon"> F </span>
+                                        <span className="sidenav-normal"> Player Membership Types </span>
+                                        </NavLink>
+                                    </li>
+                                    <li className="nav-item">
+                                        <NavLink to="team-membership-types" className="nav-link">
+                                        <span className="sidenav-mini-icon"> P </span>
+                                        <span className="sidenav-normal"> Team Membership Types </span>
+                                        </NavLink>
+                                    </li>
+                                    <li className="nav-item">
+                                        <NavLink to="coach-membership-types" className="nav-link">
+                                        <span className="sidenav-mini-icon"> A </span>
+                                        <span className="sidenav-normal"> Coach Membership Types </span>
+                                        </NavLink>
+                                    </li>
+                                    <li className="nav-item">
+                                        <NavLink to="trainer-membership-types" className="nav-link">
+                                        <span className="sidenav-mini-icon"> A </span>
+                                        <span className="sidenav-normal"> Trainer Membership Types </span>
+                                        </NavLink>
+                                    </li>
+                                    <li className="nav-item">
+                                        <NavLink to="manager-membership-types" className="nav-link" >
+                                        <span className="sidenav-mini-icon"> S </span>
+                                        <span className="sidenav-normal"> Manager Membership Types </span>
+                                        </NavLink>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li className="nav-item">
                             <NavLink to="courts" className="nav-link" >
                                 <span className="nav-link-text ms-1"><GiBasketballBasket/> Courts</span>
                             </NavLink>
@@ -181,12 +219,56 @@ const Sidebar = () => {
                                 <ul className="nav ms-4 ps-3">
                                     <li className="nav-item">
                                         <NavLink to="prizes" className="nav-link" >
-                                            <span className="nav-link-text ms-1"><GiTrophyCup/> Prizes</span>
+                                            <span className="nav-link-text ms-1"> Prizes</span>
                                         </NavLink>
                                     </li>
                                     <li className="nav-item">
                                         <NavLink to="gifts" className="nav-link" >
-                                            <span className="nav-link-text ms-1"><AiFillGift/> Gifts</span>
+                                            <span className="nav-link-text ms-1"> Gifts</span>
+                                        </NavLink>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li className="nav-item">
+                            <a data-bs-toggle="collapse" href="#rating-types" className="nav-link"  role="button" aria-expanded="true">
+                                <span className="nav-link-text ms-1"><AiFillStar/> Rating Types</span>
+                            </a>
+                            <div className="collapse" id="rating-types" >
+                                <ul className="nav ms-4 ps-3">
+                                    <li className="nav-item">
+                                        <NavLink to="player-rating-types" className="nav-link" >
+                                            <span className="nav-link-text ms-1"> Player Rating Types</span>
+                                        </NavLink>
+                                    </li>
+                                    <li className="nav-item">
+                                        <NavLink to="team-rating-types" className="nav-link" >
+                                            <span className="nav-link-text ms-1"> Team Rating Types</span>
+                                        </NavLink>
+                                    </li>
+                                    <li className="nav-item">
+                                        <NavLink to="court-rating-types" className="nav-link" >
+                                            <span className="nav-link-text ms-1"> Court Rating Types</span>
+                                        </NavLink>
+                                    </li>
+                                    <li className="nav-item">
+                                        <NavLink to="trainer-rating-types" className="nav-link" >
+                                            <span className="nav-link-text ms-1"> Trainer Rating Types</span>
+                                        </NavLink>
+                                    </li>
+                                    <li className="nav-item">
+                                        <NavLink to="training-rating-types" className="nav-link" >
+                                            <span className="nav-link-text ms-1"> Training Rating Types</span>
+                                        </NavLink>
+                                    </li>
+                                    <li className="nav-item">
+                                        <NavLink to="coach-rating-types" className="nav-link" >
+                                            <span className="nav-link-text ms-1"> Coach Rating Types</span>
+                                        </NavLink>
+                                    </li>
+                                    <li className="nav-item">
+                                        <NavLink to="manager-rating-types" className="nav-link" >
+                                            <span className="nav-link-text ms-1"> Manager Rating Types</span>
                                         </NavLink>
                                     </li>
                                 </ul>

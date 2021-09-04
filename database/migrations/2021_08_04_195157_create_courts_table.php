@@ -18,11 +18,13 @@ class CreateCourtsTable extends Migration
             $table->integer("user_id");
             $table->integer("contract_id");
             $table->integer("comment_id");
+            $table->integer("rating_id");
             $table->integer("country_id");
             $table->integer("city_id");
             $table->integer("district_id");
             $table->string("name");
             $table->text("address");
+            $table->json("settings");
             $table->text("qualifications");
             $table->timestamps();
         });

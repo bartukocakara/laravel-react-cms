@@ -16,7 +16,7 @@ class CreateSubscriptionsTable extends Migration
         Schema::create('subscriptions', function (Blueprint $table) {
             $table->id();
             $table->integer("currency_id");
-            $table->string("code", 3);
+            $table->enum("type")->comment("TRAINER", "COURT", "MANAGER");
             $table->string("title", 50);
             $table->text("description");
             $table->decimal('total', 15, 2);

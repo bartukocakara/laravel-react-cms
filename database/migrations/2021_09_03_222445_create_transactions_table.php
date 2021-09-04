@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateRatingsTable extends Migration
+class CreateTransactionsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,12 @@ class CreateRatingsTable extends Migration
      */
     public function up()
     {
-        Schema::create('ratings', function (Blueprint $table) {
+        Schema::create('transactions', function (Blueprint $table) {
             $table->id();
-            $table->integer("rating_type");
-            $table->string("title");
-            $table->text("content");
+            $table->integer("currency_id");
+            $table->string("payment_key")->comment("min 10 chars key");
+            $table->integer("commission_id");
+            $table->decimal("amount", 15, 2);
             $table->timestamps();
         });
     }
@@ -29,6 +30,6 @@ class CreateRatingsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('ratings');
+        Schema::dropIfExists('transactions');
     }
 }

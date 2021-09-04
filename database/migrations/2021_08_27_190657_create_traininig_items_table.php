@@ -15,6 +15,10 @@ class CreateTraininigItemsTable extends Migration
     {
         Schema::create('traininig_items', function (Blueprint $table) {
             $table->id();
+            $table->string("name");
+            $table->text("description");
+            $table->string("small_image");
+            $table->string("images");
             $table->timestamps();
         });
     }

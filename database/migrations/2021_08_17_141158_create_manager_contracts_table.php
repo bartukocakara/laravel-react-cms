@@ -19,7 +19,7 @@ class CreateManagerContractsTable extends Migration
             $table->string("title");
             $table->text("content");
             $table->enum("type", ["TEAM", "PLAYER"]);
-            $table->enum("status", ["PENDING", "SUCCESS", "FAILED", "CANCELED"]);
+            $table->enum("status", ["PENDING", "COMPLETED", "FAILED", "CANCELED"]);
             $table->date("from_date");
             $table->date("to_date");
             $table->timestamps();
