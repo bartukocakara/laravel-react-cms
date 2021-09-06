@@ -18,6 +18,7 @@ class CreateTrainersTable extends Migration
             $table->integer("user_id");
             $table->integer("rating_id");
             $table->integer("status_id");
+            $table->string('favourite_players')->comment("1,3,2,8,9,12");
             $table->timestamps();
         });
     }

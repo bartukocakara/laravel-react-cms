@@ -22,7 +22,7 @@ class CreateMatchesTable extends Migration
             $table->enum("match_category", ["STANDARD", "TOURNAMENT", "ALL_STAR"]);
             $table->json("player_request_statuses")->comment('["user_id" => "1", "status = 0"], ...');
             $table->json("team_request_statuses")->comment('["team_id" => "1", "status = 0"], ...');
-            $table->enum("status", ["PENDING", "READY", "FAILED", "STARTED", "ENDED"]);
+            $table->enum("status", ["PENDING", "READY", "FAILED", "STARTED", "ENDED", "REFUND_COMPLETED", "REFUND_REQUEST_CREATED", "REFUND_REQUEST_REJECTED", "REFUND_REQUEST_APPROVED"]);
             $table->enum("allow_video", [0, 1]);
             $table->json("settings");
             $table->timestamps();

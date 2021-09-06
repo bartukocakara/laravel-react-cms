@@ -17,6 +17,10 @@ class CreatePlayersTable extends Migration
             $table->id();
             $table->integer("user_id");
             $table->string("positions")->comment("PG|SG|SF|PF|C");
+            $table->string('favourite_players')->comment("1,3,2,8,9,12");
+            $table->string('favourite_courts')->comment("25,99,12,23");
+            $table->string('favourite_teams')->comment("25,99,12,23");
+            $table->string('favourite_trainers')->comment("25,120,12,23");
             $table->json("settings");
             $table->string("prize_earnings");
             $table->timestamps();
