@@ -12,7 +12,6 @@ import store from './redux/store';
 function App() {
     const routeComponents = adminRoutes.map(({path, component, exact}, key) => <Route exact={exact} path={path} component={component} key={key} />);
 
-    console.log(adminRoutes);
     return (
         <>
         <BrowserRouter>

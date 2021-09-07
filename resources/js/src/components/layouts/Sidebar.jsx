@@ -81,7 +81,7 @@ const Sidebar = () => {
                                         </NavLink>
                                     </li>
                                     <li className="nav-item">
-                                        <NavLink to="coachs" className="nav-link">
+                                        <NavLink to="coaches" className="nav-link">
                                             <span className="sidenav-mini-icon"> C </span>
                                             <span className="sidenav-normal"> Coaches </span>
                                         </NavLink>

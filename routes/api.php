@@ -5,6 +5,19 @@ use Illuminate\Support\Facades\Route;
 
 //***************** BACK APIS ************************
     // -----route prefix urı (/back/)----
+Route::post("/postTesting", function (Request $request){
+    return response()->json($request->all(), 200);
+});
+
+Route::post("/getTesting", function (){
+    return response()->json(
+        [
+            [
+                "name" => "Bartu",
+                "surname" => "Kocakara",
+            ]
+        ], 200);
+});
 
                     // PLAYER
 Route::get("/players", "PlayerController@getAll");

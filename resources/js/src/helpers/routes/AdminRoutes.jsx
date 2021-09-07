@@ -4,6 +4,7 @@ import Courts from "./../../pages/courts/Courts";
 import Matches from "./../../pages/matches/Matches";
 import Players from "../../pages/users/players/Players";
 import Managers from "../../pages/users/managers/Managers";
+import Coaches from "../../pages/users/coaches/Coaches";
 import Teams from "./../../pages/teams/Teams";
 import Tournaments from "./../../pages/tournaments/Tournaments";
 import Trainers from "./../../pages/users/trainers/Trainers";
@@ -27,6 +28,11 @@ import TrainerRatingTypes from "../../pages/rating-types/TrainerRatingTypes";
 import TrainingRatingTypes from "../../pages/rating-types/TrainingRatingTypes";
 import ManagerRatingTypes from "../../pages/rating-types/ManagerRatingTypes";
 import CoachRatingTypes from "../../pages/rating-types/CoachRatingTypes";
+import PlayerMembershipTypes from "../../pages/membership-types/player-membership-types/PlayerMembershipTypes";
+import TrainerMembershipTypes from "../../pages/membership-types/trainer-membership-types/TrainerMembershipTypes";
+import CoachMembershipTypes from "../../pages/membership-types/coach-membership-types/CoachMembershipTypes";
+import TeamMembershipTypes from "../../pages/membership-types/team-membership-types/TeamMembershipTypes";
+import ManagerMembershipTypes from "../../pages/membership-types/manager-membership-types/ManagerMembershipTypes";
 
 const adminRoutes = [
 
@@ -36,6 +42,7 @@ const adminRoutes = [
     { name  : "Match List", path : "/matches", exact : false, component : Matches},
     { name  : "Court List", path : "/courts", exact : false, component : Courts},
     { name  : "CourtHost List", path : "/court-hosts", exact : false, component : CourtHosts},
+    { name  : "Coach List", path : "/coaches", exact : false, component : Coaches},
     { name  : "Trainer List", path : "/trainers", exact : false, component : Trainers},
     { name  : "Training List", path : "/trainings", exact : false, component : Trainings},
     { name  : "Tournament List", path : "/tournaments", exact : false, component : Tournaments},
@@ -61,7 +68,11 @@ const adminRoutes = [
     { name  : "Manager Rating Types", path : "/manager-rating-types", exact : false, component : ManagerRatingTypes},
     { name  : "Coach Rating Types", path : "/coach-rating-types", exact : false, component : CoachRatingTypes},
     { name  : "About Us", path : "/about-us", exact : false, component : AboutUs},
-    
+    { name  : "Player Membership Types", path : "/player-membership-types", exact : false, component : PlayerMembershipTypes},
+    { name  : "Trainer Membership Types", path : "/trainer-membership-types", exact : false, component : TrainerMembershipTypes},
+    { name  : "Coach Membership Types", path : "/coach-membership-types", exact : false, component : CoachMembershipTypes},
+    { name  : "Team Membership Types", path : "/team-membership-types", exact : false, component : TeamMembershipTypes},
+    { name  : "Manager Membership Types", path : "/manager-membership-types", exact : false, component : ManagerMembershipTypes},
 ];
 
 export default adminRoutes
