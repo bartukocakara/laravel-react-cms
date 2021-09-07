@@ -9,7 +9,7 @@ Route::post("/postTesting", function (Request $request){
     return response()->json($request->all(), 200);
 });
 
-Route::post("/getTesting", function (){
+Route::get("/getTesting", function (){
     return response()->json(
         [
             [
