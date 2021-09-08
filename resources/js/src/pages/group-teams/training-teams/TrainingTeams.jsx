@@ -1,4 +1,4 @@
-const EditPlayerModal = () => {
+const TrainingTeams = () => {
     return (
         <div>
             
@@ -6,4 +6,4 @@ const EditPlayerModal = () => {
     )
 }
 
-export default EditPlayerModal
+export default TrainingTeams

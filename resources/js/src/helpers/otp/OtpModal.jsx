@@ -1,4 +1,4 @@
-const EditMatchModal = () => {
+const OtpModal = () => {
     return (
         <div>
             
@@ -6,4 +6,4 @@ const EditMatchModal = () => {
     )
 }
 
-export default EditMatchModal
+export default OtpModal
