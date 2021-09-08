@@ -19,7 +19,9 @@ class CreateUsersTable extends Migration
             $table->integer('city_id');
             $table->integer('district_id');
             $table->integer('membership_type_id');
-            $table->integer('comment_id');
+            $table->integer('company_id');
+            $table->integer('role_id');
+            $table->string('active_currencies')->comment(["TRY|EUR|USD", "TRY|USD", "EUR|USD", "TRY|EUR"]);
             $table->string('name');
             $table->string('second_name')->nullable(true);
             $table->string('surname');
@@ -34,7 +36,8 @@ class CreateUsersTable extends Migration
             $table->tinyInteger('phone_code');
             $table->string('phone');
             $table->text('address');
-            $table->enum('role', ["SUPER_ADMIN", "ADMIN", "PLAYER", "TRAINER", "TEAM_HOST", "COURT_HOST", "MANAGER", "COACH", "REFEREE"])->comment(' User Roles')->default(null)->nullable(true);
+            $table->integer('latitude');
+            $table->integer('longitude');
             $table->timestamp('email_verified_at')->nullable();
             $table->rememberToken();
             $table->timestamps();

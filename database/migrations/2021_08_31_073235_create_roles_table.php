@@ -15,9 +15,10 @@ class CreateRolesTable extends Migration
     {
         Schema::create('roles', function (Blueprint $table) {
             $table->id();
+            $table->enum("code", ["SUPER_ADMIN", "ADMIN", "PLAYER", "TRAINER", "TEAM_HOST", "COURT_HOST", "MANAGER", "COACH", "REFEREE"]);
             $table->string("name");
             $table->text("description");
-            $table->string("permissions");
+            $table->string("permissions")->comment("eru, crud");
             $table->enum("status", [0, 1]);
             $table->timestamps();
         });

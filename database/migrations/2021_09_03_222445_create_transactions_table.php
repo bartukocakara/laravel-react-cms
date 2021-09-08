@@ -16,8 +16,10 @@ class CreateTransactionsTable extends Migration
         Schema::create('transactions', function (Blueprint $table) {
             $table->id();
             $table->integer("currency_id");
-            $table->string("payment_key")->comment("min 10 chars key");
+            $table->integer("court_host_id");
+            $table->integer("event_id");
             $table->integer("commission_id");
+            $table->string("payment_key")->comment("min 10 chars key");
             $table->decimal("amount", 15, 2);
             $table->timestamps();
         });
