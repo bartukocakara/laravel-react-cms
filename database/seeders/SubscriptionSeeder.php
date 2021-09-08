@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
+use App\Models\Subscription;
 
 class SubscriptionSeeder extends Seeder
 {
@@ -13,6 +14,8 @@ class SubscriptionSeeder extends Seeder
      */
     public function run()
     {
-        //
+        Subscription::factory()
+            ->times(50)
+            ->create();
     }
 }

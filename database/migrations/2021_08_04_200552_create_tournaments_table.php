@@ -21,6 +21,7 @@ class CreateTournamentsTable extends Migration
             $table->string("teams");
             $table->string("players");
             $table->string("courts");
+            $table->string("url_slug");
             $table->string("referees");
             $table->string("matches");
             $table->string("sponsors");

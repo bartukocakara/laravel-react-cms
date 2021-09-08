@@ -1,17 +1,17 @@
-import AllStarEvents from "./../../pages/all-star-events/AllStarEvents";
+import AllStarEvents from "./../../pages/events/all-star-events/AllStarEvents";
 import CourtHosts from "./../../pages/court-hosts/CourtHosts";
 import Courts from "./../../pages/courts/Courts";
-import Matches from "./../../pages/matches/Matches";
+import Matches from "./../../pages/events/matches/Matches";
 import Players from "../../pages/users/players/Players";
 import Managers from "../../pages/users/managers/Managers";
 import Coaches from "../../pages/users/coaches/Coaches";
-import Teams from "./../../pages/teams/Teams";
-import Tournaments from "./../../pages/tournaments/Tournaments";
+import PlayerTeams from "./../../pages/group-teams/player-teams/PlayerTeams";
+import Tournaments from "./../../pages/events/tournaments/Tournaments";
 import Trainers from "./../../pages/users/trainers/Trainers";
-import Trainings from "./../../pages/trainings/Trainings";
+import Trainings from "./../../pages/events/trainings/Trainings";
 import Dashboard from './../../pages/dashboard/Dashboard';
-import Gifts from './../../pages/gifts/Gifts';
-import Prizes from './../../pages/prizes/Prizes';
+import Gifts from './../../pages/giving/gifts/Gifts';
+import Prizes from './../../pages/giving/prizes/Prizes';
 import AboutUs from "../../pages/info/about-us/AboutUs";
 import SupportTickets from "../../pages/support-tickets/SupportTickets";
 import AllStarLogs from "../../pages/logs/all-star-logs/AllStarLogs";
@@ -37,7 +37,7 @@ import ManagerMembershipTypes from "../../pages/membership-types/manager-members
 const adminRoutes = [
 
     { name  : "Dashboard", path : "/dashboard", exact : true, component : Dashboard},
-    { name  : "Team List", path : "/teams", exact : false, component : Teams},
+    { name  : "Team List", path : "/player-teams", exact : false, component : PlayerTeams},
     { name  : "Players List", path : "/players", exact : false, component : Players},
     { name  : "Match List", path : "/matches", exact : false, component : Matches},
     { name  : "Court List", path : "/courts", exact : false, component : Courts},

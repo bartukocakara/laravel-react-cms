@@ -14,6 +14,7 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         $this->call([
+            UserSeeder::class,
             AllStarSeeder::class,
             CitySeeder::class,
             CoachSeeder::class,
@@ -22,7 +23,7 @@ class DatabaseSeeder extends Seeder
             CourtStatusSeeder::class,
             CurrencySeeder::class,
             DistrictSeeder::class,
-            LicenceTypeSeeder::class,
+            LicenceSeeder::class,
             ManagerRatingTypeSeeder::class,
             ManagerSeeder::class,
             MatchSeeder::class,
@@ -40,6 +41,30 @@ class DatabaseSeeder extends Seeder
             TournamentSeeder::class,
             TrainerStatusSeeder::class,
             VideoSeeder::class,
+            MatchSettingSeeder::class,
+            TrainerSettingSeeder::class,
+            TrainingSetting::class,
+            PlayerSetting::class,
+            MatchSettingsSeeder::class,
+            CourtSettingSeeder::class,
+            TournamentSettingSeeder::class,
+            AllStarSettingSeeder::class,
+            GiftSeeder::class,
+            ManagerContractSeeder::class,
+            PlayerContractSeeder::class,
+            FaqSeeder::class,
+            PermissionSeeder::class,
+            RoleSeeder::class,
+            TrainingItemSeeder::class,
+            TrainingTypeSeeder::class,
+            TransactionSeeder::class,
+            SurveySeeder::class,
+            ModuleSeeder::class,
+            SubModuleSeeder::class,
+            PageSeeder::class,
+            CompanySeeder::class,
+            CommissionSeeder::class,
+            MembershiğTypeSeeder::class,
             ]);
     }
 }

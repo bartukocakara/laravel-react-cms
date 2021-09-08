@@ -1,7 +1,7 @@
 import React from 'react';
 import DataTable from './datatable/Datatable'
 
-const Teams = () => {
+const PlayerTeams = () => {
     return (
         <div>
 
@@ -9,4 +9,4 @@ const Teams = () => {
     )
 }
 
-export default Teams
+export default PlayerTeams

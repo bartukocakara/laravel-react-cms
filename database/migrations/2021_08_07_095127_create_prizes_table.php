@@ -19,6 +19,7 @@ class CreatePrizesTable extends Migration
             $table->text("content");
             $table->string("small_image");
             $table->string("images");
+            $table->string("url_slug");
             $table->timestamps();
         });
     }

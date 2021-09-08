@@ -20,6 +20,7 @@ class CreateFaqsTable extends Migration
             $table->enum("category", ["CREATE_COURT", "CREATE_MATCH", "CREATE_TEAM", "CREATE_TRAINING","CREATE_TOURNAMENT",
                                      "MATCH_PAYMENT", "TRAINING_PAYMENT", "TOURNAMENT_PAYMENT", "ALLSTAR_PAYMENT",
                                      "GIFTS", "PRIZES", "SPONSORS", "REFERENCES", "SUPPORT", "CONTACT", "PRIVACY"]);
+            $table->string("category_url_slug");
             $table->timestamps();
         });
     }

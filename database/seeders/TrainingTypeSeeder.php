@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
+use App\Models\TrainingType;
 
 class TrainingTypeSeeder extends Seeder
 {
@@ -13,6 +14,8 @@ class TrainingTypeSeeder extends Seeder
      */
     public function run()
     {
-        //
+        TrainingType::factory()
+            ->times(50)
+            ->create();
     }
 }

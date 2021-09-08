@@ -3,7 +3,7 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
-use App\Models\CourtStatus;
+use App\Models\Video;
 
 class VideoSeeder extends Seeder
 {
@@ -14,7 +14,7 @@ class VideoSeeder extends Seeder
      */
     public function run()
     {
-        CourtStatus::factory()
+        Video::factory()
             ->times(50)
             ->create();
     }

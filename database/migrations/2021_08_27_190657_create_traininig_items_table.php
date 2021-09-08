@@ -19,6 +19,7 @@ class CreateTraininigItemsTable extends Migration
             $table->text("description");
             $table->string("small_image");
             $table->string("images");
+            $table->string("url_slug");
             $table->timestamps();
         });
     }

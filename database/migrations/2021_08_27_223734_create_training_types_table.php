@@ -18,6 +18,7 @@ class CreateTrainingTypesTable extends Migration
             $table->string("name");
             $table->text("description");
             $table->enum("status", [0, 1]);
+            $table->string("url_slug");
             $table->timestamps();
         });
     }

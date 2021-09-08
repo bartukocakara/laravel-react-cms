@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
+use App\Models\TrainingItem;
 
 class TraininigItemSeeder extends Seeder
 {
@@ -13,6 +14,8 @@ class TraininigItemSeeder extends Seeder
      */
     public function run()
     {
-        //
+        TrainingItem::factory()
+            ->times(50)
+            ->create();
     }
 }

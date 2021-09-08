@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
+use App\Models\Page;
 
 class ModuleSeeder extends Seeder
 {
@@ -13,6 +14,8 @@ class ModuleSeeder extends Seeder
      */
     public function run()
     {
-        //
+        Page::factory()
+            ->times(50)
+            ->create();
     }
 }

@@ -24,6 +24,7 @@ class CreateAllStars extends Migration
             $table->string("referees")->comment("referee_ids : 232, 29, 411, 156");;
             $table->enum("status", ["PENDING", "STARTED", "ENDED", "CANCELED", "FAILED"]);
             $table->date("event_date");
+            $table->string("url_slug");
             $table->timestamps();
         });
     }

@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
+use App\Models\ManagerContract;
 
 class ManagerContractSeeder extends Seeder
 {
@@ -13,6 +14,8 @@ class ManagerContractSeeder extends Seeder
      */
     public function run()
     {
-        //
+        ManagerContract::factory()
+            ->times(50)
+            ->create();
     }
 }

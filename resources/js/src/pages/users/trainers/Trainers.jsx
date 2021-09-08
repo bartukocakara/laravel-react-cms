@@ -7,18 +7,19 @@ const Trainers = () => {
     const [appSecret, setAppSecret] = useState('b46a67571aa1e7ef5641dc3fa6f1712a')
     const [loading, setLoading] = useState(true);
 
-    const submitValue = () => {
+    const submitValue = (event) => {
+        event.preventDefault();
         const authData = {
                 'app_id' : appId,
                 'app_secret' : appSecret,
                 }
-        axios.post('api/testing', authData)
+        axios.post('https://localhost/app.sipay.com.tr/ccpayment/api/token', authData)
         .then((response) => console.log(response.data))
         .then(setLoading(false))
         .catch(error => {
             console.error('There was an error!', error);
         });
-    }
+    };
     const loadingSpinner = (<div class="col-12 d-block spinner-border text-primary m-auto" role="status">
                                 <span class="visually-hidden">Loading...{loading}</span>
                             </div>)
@@ -26,6 +27,7 @@ const Trainers = () => {
         <div className="row">
             <div className="col-md-6">
                 <h6>Request</h6>
+                <form onSubmit={submitValue}>
                     <div className="row">
                     <div className="col-md-6">
                         <div className="form-group">
@@ -43,6 +45,7 @@ const Trainers = () => {
                         <input type="submit" value="send" onClick={submitValue} className="btn btn-primary" />
                     </div>
                     </div>
+                </form>
             </div>
             <div className="col-md-6">
                 <h6>Response</h6>

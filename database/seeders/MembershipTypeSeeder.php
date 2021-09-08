@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
+use App\Models\MembershipType;
 
 class MembershipTypeSeeder extends Seeder
 {
@@ -13,6 +14,8 @@ class MembershipTypeSeeder extends Seeder
      */
     public function run()
     {
-        //
+        MembershipType::factory()
+            ->times(50)
+            ->create();
     }
 }

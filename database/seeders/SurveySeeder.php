@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
+use App\Models\Survey;
 
 class SurveySeeder extends Seeder
 {
@@ -13,6 +14,8 @@ class SurveySeeder extends Seeder
      */
     public function run()
     {
-        //
+        Survey::factory()
+            ->times(50)
+            ->create();
     }
 }

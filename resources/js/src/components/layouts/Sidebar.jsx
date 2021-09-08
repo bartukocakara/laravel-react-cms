@@ -5,6 +5,7 @@ import { FaBasketballBall, FaFileContract } from "react-icons/fa";
 import { MdEventAvailable, MdCardMembership } from "react-icons/md";
 import { BsFillInfoCircleFill } from "react-icons/bs";
 import { GiBasketballBasket } from "react-icons/gi";
+import { MdGroup } from "react-icons/md";
 import { RiTeamFill, RiDashboardFill } from "react-icons/ri";
 import { AiFillGift } from "react-icons/ai";
 import { FiSettings } from "react-icons/fi";
@@ -13,7 +14,7 @@ import { AiFillNotification, AiOutlineUsergroupAdd, AiOutlineFileProtect, AiFill
 
 const Sidebar = () => {
     return (
-            <aside className="sidenav navbar navbar-vertical navbar-expand-xs border-0 border-radius-xl my-3 fixed-start ms-3 " >
+            <aside className="sidenav navbar navbar-vertical navbar-expand-xs border-0 border-radius-xl my-3 fixed-start ms-3 ps ps--active-y bg-white" >
                 <div className="sidenav-header">
                     <i className="fas fa-times p-3 cursor-pointer text-secondary opacity-5 position-absolute end-0 top-0 d-none d-xl-none" aria-hidden="true" id="iconSidenav"></i>
                     <Link to="" className="navbar-brand m-0" target="_blank">
@@ -136,6 +137,34 @@ const Sidebar = () => {
                                         <NavLink to="trainings" className="nav-link" >
                                         <span className="sidenav-mini-icon"> S </span>
                                         <span className="sidenav-normal"> Training </span>
+                                        </NavLink>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li className="nav-item">
+                            <a data-bs-toggle="collapse" href="#team-types" className="nav-link"  role="button" aria-expanded="true">
+
+                                <span className="nav-link-text ms-1"><MdGroup/> Team Types</span>
+                            </a>
+                            <div className="collapse" id="team-types" >
+                                <ul className="nav ms-4 ps-3">
+                                    <li className="nav-item">
+                                        <NavLink to="player-membership-types" className="nav-link">
+                                        <span className="sidenav-mini-icon"> F </span>
+                                        <span className="sidenav-normal"> Player Teams </span>
+                                        </NavLink>
+                                    </li>
+                                    <li className="nav-item">
+                                        <NavLink to="team-membership-types" className="nav-link">
+                                        <span className="sidenav-mini-icon"> P </span>
+                                        <span className="sidenav-normal"> Training Teams </span>
+                                        </NavLink>
+                                    </li>
+                                    <li className="nav-item">
+                                        <NavLink to="coach-membership-types" className="nav-link">
+                                        <span className="sidenav-mini-icon"> A </span>
+                                        <span className="sidenav-normal"> Company Teams </span>
                                         </NavLink>
                                     </li>
                                 </ul>
