@@ -6,6 +6,7 @@ import Topbar from './components/layouts/Topbar';
 import "./app.scss";
 
 import adminRoutes from './helpers/routes/AdminRoutes';
+import EditAllStar from './pages/details/all-star-detail/edit/EditAllStar';
 
 function App() {
     const routeComponents = adminRoutes.map(({path, component, exact}, key) => <Route exact={exact} path={path} component={component} key={key} />);

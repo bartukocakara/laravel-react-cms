@@ -33,6 +33,7 @@ import TrainerMembershipTypes from "../../pages/membership-types/trainer-members
 import CoachMembershipTypes from "../../pages/membership-types/coach-membership-types/CoachMembershipTypes";
 import TeamMembershipTypes from "../../pages/membership-types/team-membership-types/TeamMembershipTypes";
 import ManagerMembershipTypes from "../../pages/membership-types/manager-membership-types/ManagerMembershipTypes";
+import EditAllStar from "../../pages/details/all-star-detail/edit/EditAllStar";
 
 const adminRoutes = [
 
@@ -73,6 +74,7 @@ const adminRoutes = [
     { name  : "Coach Membership Types", path : "/coach-membership-types", exact : false, component : CoachMembershipTypes},
     { name  : "Team Membership Types", path : "/team-membership-types", exact : false, component : TeamMembershipTypes},
     { name  : "Manager Membership Types", path : "/manager-membership-types", exact : false, component : ManagerMembershipTypes},
+    { name  : "Edit AllStar", path : "/all-stars/edit", exact : false, component : EditAllStar},
 ];
 
 export default adminRoutes
