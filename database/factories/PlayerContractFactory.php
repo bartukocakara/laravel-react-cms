@@ -22,7 +22,12 @@ class PlayerContractFactory extends Factory
     public function definition()
     {
         return [
-            //
+            "player_id" => $this->faker->name(),
+            "title" => $this->faker->name(),
+            "content" => $this->faker->name(),
+            "price" => $this->faker->name(),
+            "payment_type_id" => $this->faker->name(),
+            "status" => $this->faker->randomElement(["PENDING", "COMPLETED", "FAILED", "CANCELED"]),
         ];
     }
 }

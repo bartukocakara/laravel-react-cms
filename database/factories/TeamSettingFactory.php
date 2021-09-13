@@ -21,8 +21,28 @@ class TeamSettingFactory extends Factory
      */
     public function definition()
     {
+        $count = 5;
+        $days = ["MONDAY", "THUESDAY", "WEDNESDAY", "THURSDAY", "SUNDAY"];
+        $randomDays = $faker->take($count)->randomElement($days);
+        
+        $privacy = [
+            "is_match_req_enabled" => $this->faker->randomElement([0, 1]),
+            "is_messages_enabled" => $this->faker->randomElement([0, 1]),
+            "is_join_req_enabled" => $this->faker->randomElement([0, 1]),
+            "is_training_req_enabled" => $this->faker->randomElement([0, 1]),
+
+        ];
+        $eventAvailability = [
+                "date_range" => [
+                    "from" => $this->faker->dateTimeBetween('now', '+2 years'),
+                    "to" => $this->faker->dateTimeBetween('now', '+2 years'),
+                ],
+                "week_days" => $randomDays,
+                "is_all_requests_enabled" => [0, 1]
+        ];
         return [
-            //
+            "privacy" => $privacy,
+            "event_availability" => $eventAvailability,
         ];
     }
 }

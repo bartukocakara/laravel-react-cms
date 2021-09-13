@@ -22,11 +22,11 @@ class CoachFactory extends Factory
     public function definition()
     {
         return [
-            "user_id" => $this->faker->name(),
-            "comment_id" => $this->faker->sentence(10, true),
-            "rewards" => $this->faker->name(),
-            "settings" => $this->faker->name(),
-            "name" => $this->faker->name(),
+            "user_id" => $this->faker->numberBetween(1, 100),
+            "coach_setting_id" => $this->faker->numberBetween(1, 100),
+            "comment_id" => $this->faker->numberBetween(1, 100),
+            "licences" => $this->faker->randomElement([1, 2, 3], [3, 5 ,7], [3, 5 ,9, 10]),
+            "rewards" => $this->faker->randomElement([1, 2, 5], [3, 5 ,10], [3, 5 ,9, 4]),
         ];
     }
 }

@@ -13,6 +13,14 @@ class AdminFeatureModuleSeeder extends Seeder
      */
     public function run()
     {
-        //
+        AdminFeatureModule::insert([
+            "country_id" => "",
+            "city_id" => "",
+            "district_id" => "",
+            "name" => "",
+            "address" => "",
+            "phone_code" => "",
+            "phone" => "",
+        ]);
     }
 }

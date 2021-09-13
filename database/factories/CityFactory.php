@@ -23,8 +23,8 @@ class CityFactory extends Factory
     {
         return [
             "country_id" => $this->faker->numberBetween(01, 500),
-            "code" => $this->faker->name(),
-            "name" => $this->faker->name(),
+            "code" => $this->faker->numberBetween(01, 500),
+            "name" => $this->faker->cityName,
         ];
     }
 }

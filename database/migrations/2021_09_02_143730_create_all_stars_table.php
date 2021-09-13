@@ -16,6 +16,9 @@ class CreateAllStars extends Migration
         Schema::create('all_stars', function (Blueprint $table) {
             $table->id();
             $table->integer("court_id");
+            $table->integer("country_id");
+            $table->integer("city_id");
+            $table->integer("district_id");
             $table->string("players")->comment("player_ids : 123, 232, 54");
             $table->string("gifts")->comment("gift_ids : 2, 5, 4, 10");
             $table->string("prizes")->comment("prize_ids : 10, 12, 4, 1");

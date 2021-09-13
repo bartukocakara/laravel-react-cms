@@ -22,7 +22,11 @@ class CommissionFactory extends Factory
     public function definition()
     {
         return [
-            //
+            "type" => $this->faker->randomElement(["MATCH", "TRAINING", "TOURNAMENT", "ALL_STAR"]),
+            "name" => $this->faker->name,
+            "description" => $this->faker->numberBetween(1, 100),
+            "amount" => $this->faker->randomElement(["20", "30", "50", "70", "80"]),
+            "status" => $this->faker->randomElement([0, 1]),
         ];
     }
 }

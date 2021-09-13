@@ -24,7 +24,7 @@ class CommentFactory extends Factory
         return [
             "title" => $this->faker->words(3, true),
             "message" => $this->faker->name(10, true),
-            "type" => $this->faker->randomElement("BAD", "GOOD"),
+            "type" => $this->faker->randomElement(["BAD", "GOOD"]),
         ];
     }
 }
