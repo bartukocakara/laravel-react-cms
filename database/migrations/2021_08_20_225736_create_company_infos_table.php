@@ -18,6 +18,7 @@ class CreateCompanyInfosTable extends Migration
             $table->integer("country_id");
             $table->integer("city_id");
             $table->integer("district_id");
+            $table->integer("currency_id");
             $table->string("name");
             $table->text("address");
             $table->string("phone_code")->comment("+90");

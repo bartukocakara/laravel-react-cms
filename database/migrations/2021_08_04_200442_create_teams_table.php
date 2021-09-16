@@ -16,6 +16,7 @@ class CreateTeamsTable extends Migration
         Schema::create('teams', function (Blueprint $table) {
             $table->id();
             $table->integer("team_host");
+            $table->integer("payment_type_id");
             $table->integer("team_setting_id");
             $table->string("player_list")->comment("players ids = 23|35|78|...");
             $table->integer("country_id");

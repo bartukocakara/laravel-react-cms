@@ -24,12 +24,12 @@ class CoachSettingFactory extends Factory
         $count = 5;
         $days = ["MONDAY", "THUESDAY", "WEDNESDAY", "THURSDAY", "SUNDAY"];
         $randomDays = $faker->take($count)->randomElement($days);
-        
+
         $privacy = [
+            "is_tournament_req_enabled" => $this->faker->randomElement([0, 1]),
             "is_match_req_enabled" => $this->faker->randomElement([0, 1]),
             "is_messages_enabled" => $this->faker->randomElement([0, 1]),
             "is_join_req_enabled" => $this->faker->randomElement([0, 1]),
-            "is_training_req_enabled" => $this->faker->randomElement([0, 1]),
 
         ];
         $eventAvailability = [
