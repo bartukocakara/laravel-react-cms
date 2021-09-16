@@ -15,7 +15,7 @@ class CreateCommissionsTable extends Migration
     {
         Schema::create('commissions', function (Blueprint $table) {
             $table->id();
-            $table->enum("type", ["MATCH", "TRAINING", "TOURNAMENT", "ALL_STAR"]);
+            $table->enum("type", ["MATCH", "TRAINING", "TOURNAMENT", "MANAGER", "ALL_STAR"]);
             $table->string("name");
             $table->string("description");
             $table->decimal("amount", 15, 2);
