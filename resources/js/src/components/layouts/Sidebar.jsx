@@ -31,7 +31,6 @@ const Sidebar = () => {
                         </li>
                         <li className="nav-item">
                             <a data-bs-toggle="collapse" href="#configurations" className="nav-link"  role="button" aria-expanded="true">
-
                                 <span className="nav-link-text ms-1"><FiSettings/> Configurations</span>
                             </a>
                             <div className="collapse" id="configurations" >

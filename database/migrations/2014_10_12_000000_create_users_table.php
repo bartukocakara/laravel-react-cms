@@ -34,6 +34,8 @@ class CreateUsersTable extends Migration
             $table->string('settings');
             $table->string('licences');
             $table->string("rewards");
+            $table->integer("is_email_verified")->comment([0, 1]);
+            $table->integer("is_phone_number_verified")->comment([0, 1]);
             $table->tinyInteger('age');
             $table->tinyInteger('phone_code');
             $table->string('phone');

@@ -29,6 +29,7 @@ class CreateCourtSettingsTable extends Migration
         ];
         Schema::create('court_settings', function (Blueprint $table) {
             $table->id();
+            $table->integer("court_id");
             $table->json('privacy')->comment(json_encode($privacy, true));
             $table->json('event_availability')->comment(json_encode($eventAvailability, true));
             $table->timestamps();

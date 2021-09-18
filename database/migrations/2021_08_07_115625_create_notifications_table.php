@@ -15,9 +15,11 @@ class CreateNotificationsTable extends Migration
     {
         Schema::create('notifications', function (Blueprint $table) {
             $table->id();
-            $table->integer("user_id");
+            $table->integer("receviver_user_id");
+            $table->integer("sender_user_id");
             $table->string("title");
-            $table->string("content");
+            $table->string("message");
+            $table->string("status");
             $table->boolean("type", ["CREATE_MATCH_REQ", "CREATE_TRAINING_REQ", "CREATE_TOURNAMENT_REQ",
                                     "JOIN_MATCH_REQ", "JOIN_TEAM_REQ", "JOIN_TOURNAMENT_REQ", "JOIN_TRAINING_REQ", "JOIN_ALL_STAR_REQ",
                                     "CANCEL_MATCH","CANCEL_TRAINING", "CANCEL_TOURNAMENT", "CANCEL_JOIN_TEAM",

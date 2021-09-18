@@ -1,4 +1,4 @@
-import EditAllStarNavs from "./partials/EditAllStarNavs"
+// import EditAllStarNavs from "./partials/EditAllStarNavs"
 
 const EditAllStar = () => {
     return (
@@ -24,7 +24,7 @@ const EditAllStar = () => {
                     </div>
                 </div>
             </div>
-            <EditAllStarNavs />
+            {/* <EditAllStarNavs /> */}
         </div>
     )
 }

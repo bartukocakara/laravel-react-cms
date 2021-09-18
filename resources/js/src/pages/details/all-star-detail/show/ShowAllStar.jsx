@@ -1,4 +1,4 @@
-const ShowPlayer = () => {
+const ShowAllStar = () => {
     return (
         <div>
 
@@ -6,4 +6,4 @@ const ShowPlayer = () => {
     )
 }
 
-export default ShowPlayer
+export default ShowAllStar
