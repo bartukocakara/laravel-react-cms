@@ -21,10 +21,20 @@ class TrainerFakerFactory extends Factory
      */
     public function definition()
     {
+        $favPlayers = [];
+        $favTeams = [];
+        for ($i=0; $i < 20; $i++) {
+            $favPlayers[] = $this->faker->randomDigit;
+            $favTeams[] = $this->faker->randomDigit;
+            $i++;
+        }
         return [
-            "name" => $this->faker->name(),
-            "name" => $this->faker->name(),
-            "name" => $this->faker->name(),
+            "user_id" => $this->faker->randomDigit,
+            "rating_id" => $this->faker->randomDigit,
+            "status_id" => $this->faker->randomDigit,
+            "training_types" => $this->faker->name(),
+            "favourite_players" => json_encode($favPlayers),
+            "favourite_teams" => json_encode($favTeams),
         ];
     }
 }

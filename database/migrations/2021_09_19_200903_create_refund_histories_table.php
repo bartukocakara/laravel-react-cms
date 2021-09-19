@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateCourtAdminsTable extends Migration
+class CreateRefundHistoriesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,8 @@ class CreateCourtAdminsTable extends Migration
      */
     public function up()
     {
-        Schema::create('court_admins', function (Blueprint $table) {
+        Schema::create('refund_histories', function (Blueprint $table) {
             $table->id();
-            $table->integer("user_id");
-            $table->json("court_admin_settings_id");
-            $table->enum("commission_status", [0, 1])->default(0);
             $table->timestamps();
         });
     }
@@ -29,6 +26,6 @@ class CreateCourtAdminsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('court_admins');
+        Schema::dropIfExists('refund_histories');
     }
 }
