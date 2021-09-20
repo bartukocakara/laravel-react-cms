@@ -13,14 +13,15 @@ class CreateTrainersTable extends Migration
      */
     public function up()
     {
+        $idList = ["1,3,2,8,9,12"];
         Schema::create('trainers', function (Blueprint $table) {
             $table->id();
             $table->integer("user_id");
-            $table->integer("rating_id");
             $table->integer("status_id");
-            $table->string("training_types");
-            $table->string('favourite_players')->comment("1,3,2,8,9,12");
-            $table->string('favourite_teams')->comment("1,3,2,8,9,12");
+            $table->string("training_types")->comment("training_types : ". json_encode($idList));
+            $table->string("licences")->comment("exm : ".json_encode($idList));
+            $table->string('favourite_players')->comment("exm : ".json_encode($idList));
+            $table->string('favourite_teams')->comment("exm : ".json_encode($idList));
             $table->timestamps();
         });
     }
