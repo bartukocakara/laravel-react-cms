@@ -30,17 +30,7 @@ class ManagerSettingFactory extends Factory
         $couponCode = Str::random(6);
 
         return [
-            "created_user_id" => $this->faker->randomNumber(null, false),
-            "payment_type_id" => $this->faker->numberBetween(1, 3),
-            "reward_id" => $this->faker->numberBetween(1, 10),
-            "max_player_limit" => $this->faker->numberBetween(8, 10),
-            "min_player_limit" => 4,
-            "note" => $this->faker->sentence(10, true),
-            "fee" => $this->faker->randomFloat(10, 0, 150),
-            "coupon" => $couponCode,
-            "court_option" => $this->faker->randomElements(["HALF", "FULL"]),
-            "payment_time" => $this->faker->randomElements(["PRE_PAID", "CHECKIN_PAID", "HALF_PREPAID"]),
-            "event_datetime" => $this->faker->dateTime(),
+            
         ];
     }
 }

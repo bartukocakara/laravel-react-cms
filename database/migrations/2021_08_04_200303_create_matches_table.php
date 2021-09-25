@@ -17,7 +17,6 @@ class CreateMatchesTable extends Migration
             $table->id();
             $table->string("players")->comment("user_id list will feed this field = [1,3,4,5,6,7]");
             $table->string("teams")->comment("team_id list will feed this field = [23,56]");
-            $table->integer("match_settings_id");
             $table->integer("court_id");
             $table->integer("rating_id");
             $table->enum("match_category", ["STANDARD", "TOURNAMENT", "ALL_STAR"]);

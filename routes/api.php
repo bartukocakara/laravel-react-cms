@@ -56,10 +56,10 @@ Route::get("/tournaments/create", "TournamentController@createTournamentPost");
 Route::post("/tournaments/create", "TournamentController@createTournamentPage");
 
 
-                    //COURT HOST
-Route::get("/courtHosts", "CourtHostController@getAll");
-Route::get("/courtHosts/create", "CourtHostController@createCourtHostPage");
-Route::post("/courtHosts/create", "CourtHostController@createCourtHostPost");
+                    //COURT Admin
+Route::get("/courtAdmin", "CourtAdminController@getAll");
+Route::get("/courtAdmin/create", "CourtAdminController@createCourtAdminPage");
+Route::post("/courtAdmin/create", "CourtAdminController@createCourtAdminPost");
 
 
                     //ALL STAR
@@ -114,7 +114,7 @@ Route::namespace('Api')->group(function () {
 
 
 
-                    //COURT HOST
+                    //COURT Admin
 
 
 

@@ -15,6 +15,9 @@ class CreateTournamentCreateCancelReasonsTable extends Migration
     {
         Schema::create('tournament_create_cancel_reasons', function (Blueprint $table) {
             $table->id();
+            $table->string("title");
+            $table->string("detail");
+            $table->enum("status", [0, 1]);
             $table->timestamps();
         });
     }

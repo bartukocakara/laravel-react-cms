@@ -13,10 +13,13 @@ class CreateCourtAdminsTable extends Migration
      */
     public function up()
     {
+        // foreign key try
+        // $table->bigInteger("user_id");
+        // $table->bigInteger("user_id")->references("id")->on("users");
+
         Schema::create('court_admins', function (Blueprint $table) {
             $table->id();
             $table->integer("user_id");
-            $table->json("court_admin_settings_id");
             $table->enum("commission_status", [0, 1])->default(0);
             $table->timestamps();
         });

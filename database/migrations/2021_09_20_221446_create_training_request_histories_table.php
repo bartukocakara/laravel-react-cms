@@ -15,6 +15,11 @@ class CreateTrainingRequestHistoriesTable extends Migration
     {
         Schema::create('training_request_histories', function (Blueprint $table) {
             $table->id();
+            $table->integer("sender_id");
+            $table->integer("receiver_id");
+            $table->enum("type", ["JOIN_MATCH_TEAM", "JOIN_TALENT_GAME",
+                                  "JOIN_SLAM_GAME", "JOIN_SHOOTING_GAME",]);
+            $table->text("note");
             $table->timestamps();
         });
     }

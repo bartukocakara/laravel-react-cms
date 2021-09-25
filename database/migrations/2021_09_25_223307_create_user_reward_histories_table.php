@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateTrainingCreateCancelReasonsTable extends Migration
+class CreateUserRewardHistoriesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,10 @@ class CreateTrainingCreateCancelReasonsTable extends Migration
      */
     public function up()
     {
-        Schema::create('training_create_cancel_reasons', function (Blueprint $table) {
+        Schema::create('user_reward_histories', function (Blueprint $table) {
             $table->id();
-            $table->string("title");
-            $table->string("detail");
-            $table->enum("status", [0, 1]);
+            $table->integer("receiver_id");
+            $table->integer("sender_id");
             $table->timestamps();
         });
     }
@@ -29,6 +28,6 @@ class CreateTrainingCreateCancelReasonsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('training_create_cancel_reasons');
+        Schema::dropIfExists('user_reward_histories');
     }
 }

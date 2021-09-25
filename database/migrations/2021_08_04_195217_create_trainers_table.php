@@ -18,10 +18,11 @@ class CreateTrainersTable extends Migration
             $table->id();
             $table->integer("user_id");
             $table->integer("status_id");
-            $table->string("training_types")->comment("training_types : ". json_encode($idList));
-            $table->string("licences")->comment("exm : ".json_encode($idList));
-            $table->string('favourite_players')->comment("exm : ".json_encode($idList));
-            $table->string('favourite_teams')->comment("exm : ".json_encode($idList));
+            $table->text("training_types")->comment("training_types : ". json_encode($idList));
+            $table->text("licences")->comment("exm : ".json_encode($idList));
+            $table->text('favourite_players')->comment("exm : ".json_encode($idList));
+            $table->text('favourite_teams')->comment("exm : ".json_encode($idList));
+            $table->text('videos')->comment("exm : ".json_encode($idList));
             $table->timestamps();
         });
     }
