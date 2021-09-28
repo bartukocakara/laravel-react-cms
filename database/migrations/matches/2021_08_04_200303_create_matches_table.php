@@ -17,10 +17,10 @@ class CreateMatchesTable extends Migration
             $table->id();
             $table->string("players")->comment("user_id list will feed this field = [1,3,4,5,6,7]");
             $table->string("teams")->comment("team_id list will feed this field = [23,56]");
+            $table->string("referees")->comment("referee_id list will feed this field = [23,56]");
             $table->integer("court_id");
             $table->integer("rating_id");
-            $table->enum("match_category", ["STANDARD", "TOURNAMENT", "ALL_STAR"]);
-            $table->enum("status", ["PENDING", "READY", "FAILED", "CANCELED", "STARTED", "ENDED", "PAYMENT_COMPLETED", "REFUND_COMPLETED", "REFUND_REQUEST_CREATED", "REFUND_REQUEST_REJECTED", "REFUND_REQUEST_APPROVED"]);
+            $table->enum("match_category", ["STANDARD", "TOURNAMENT", "ALL_STAR", "TRAINING"]);
             $table->timestamps();
         });
     }

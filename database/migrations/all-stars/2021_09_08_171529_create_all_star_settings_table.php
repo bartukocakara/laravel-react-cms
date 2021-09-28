@@ -17,7 +17,6 @@ class CreateAllStarSettingsTable extends Migration
             "is_match_req_enabled" => [0, 1],
             "is_messages_enabled" => [0, 1],
             "is_join_req_enabled" => [0, 1],
-            "is_training_req_enabled" => [0, 1],
         ];
         $eventAvailability = [
                 "date_range" => [

@@ -46,6 +46,34 @@ class RouteServiceProvider extends ServiceProvider
             Route::middleware('web')
                 ->namespace($this->namespace)
                 ->group(base_path('routes/web.php'));
+            
+            Route::middleware('player')
+                ->namespace($this->namespace)
+                ->group(base_path('routes/player.php'));
+            
+            Route::middleware('admin')
+                ->namespace($this->namespace)
+                ->group(base_path('routes/admin.php')); 
+
+            Route::middleware('super-admin')
+                ->namespace($this->namespace)
+                ->group(base_path('routes/super-admin.php'));
+            
+            Route::middleware('trainer')
+                ->namespace($this->namespace)
+                ->group(base_path('routes/trainer.php'));
+                
+            Route::middleware('referee')
+                ->namespace($this->namespace)
+                ->group(base_path('routes/referee.php'));
+
+            Route::middleware('manager')
+                ->namespace($this->namespace)
+                ->group(base_path('routes/manager.php'));
+                
+            Route::middleware('coach')
+                ->namespace($this->namespace)
+                ->group(base_path('routes/coach.php'));
         });
     }
 

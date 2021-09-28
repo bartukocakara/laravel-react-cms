@@ -2,17 +2,17 @@
 
 namespace Database\Factories;
 
-use App\Models\PaymentType;
+use App\Models\TransactionState;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
-class PaymentTypeFactory extends Factory
+class TransactionStateFactory extends Factory
 {
     /**
      * The name of the factory's corresponding model.
      *
      * @var string
      */
-    protected $model = PaymentType::class;
+    protected $model = TransactionState::class;
 
     /**
      * Define the model's default state.
@@ -22,9 +22,7 @@ class PaymentTypeFactory extends Factory
     public function definition()
     {
         return [
-            "name" => $this->faker->name(),
-            "name" => $this->faker->name(),
-            "name" => $this->faker->name(),
+            //
         ];
     }
 }

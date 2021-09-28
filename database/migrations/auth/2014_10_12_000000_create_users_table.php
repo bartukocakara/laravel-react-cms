@@ -31,7 +31,6 @@ class CreateUsersTable extends Migration
             $table->string('url_slug');
             $table->string('email')->unique();
             $table->string('password');
-            $table->string('settings');
             $table->string('licences');
             $table->string("rewards");
             $table->integer("is_email_verified")->comment([0, 1]);

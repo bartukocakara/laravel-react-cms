@@ -2,17 +2,17 @@
 
 namespace Database\Factories;
 
-use App\Models\CourtAdminRewardHistory;
+use App\Models\AllStarCreateCancelReason;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
-class CourtAdminRewardHistoryFactory extends Factory
+class AllStarCreateCancelReasonFactory extends Factory
 {
     /**
      * The name of the factory's corresponding model.
      *
      * @var string
      */
-    protected $model = CourtAdminRewardHistory::class;
+    protected $model = AllStarCreateCancelReason::class;
 
     /**
      * Define the model's default state.
@@ -22,7 +22,9 @@ class CourtAdminRewardHistoryFactory extends Factory
     public function definition()
     {
         return [
-            //
+            "title" => $this->faker->words(4, true),
+            "detail" => $this->faker->words(10, true),
+            "status" => $this->faker->randomElement([0, 1]),
         ];
     }
 }

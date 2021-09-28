@@ -15,6 +15,11 @@ class CreateRefundHistoriesTable extends Migration
     {
         Schema::create('refund_histories', function (Blueprint $table) {
             $table->id();
+            $table->integer("refunder_user_id");
+            $table->integer("refund_recipient_user_id");
+            $table->enum("transaction_state_id", [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
+            $table->decimal("amount", 10, 2);
+            $table->decimal("pay_cut", 10, 2);
             $table->timestamps();
         });
     }

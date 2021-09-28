@@ -13,8 +13,13 @@ class CreateMatchRatingTypesTable extends Migration
      */
     public function up()
     {
+        $titleCodes = [ "COURT", "RESPECT", "COMPETITION", "AIR_CONDITION", "ENJOY" ];
+        $starRating = [1, 10];
         Schema::create('match_rating_types', function (Blueprint $table) {
             $table->id();
+            $table->string("name");
+            $table->string("title_code")->comment( json_encode($titleCodes) );
+            $table->integer("stars")->comment( json_encode($starRating) );
             $table->timestamps();
         });
     }

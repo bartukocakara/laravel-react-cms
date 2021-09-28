@@ -13,8 +13,12 @@ class CreateAllStarRatingTypesTable extends Migration
      */
     public function up()
     {
+        $titleCodes = [ "BAD", "BORING", "MIDDLE", "GOOD", "ENJOY"];
         Schema::create('all_star_rating_types', function (Blueprint $table) {
             $table->id();
+            $table->string("name");
+            $table->string("title_code")->comment(json_encode($titleCodes));
+            $table->integer("stars")->comment( json_encode($starRating) );
             $table->timestamps();
         });
     }

@@ -2,17 +2,17 @@
 
 namespace Database\Factories;
 
-use App\Models\AllStarCreateCancelReason;
+use App\Models\WalletSetting;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
-class AllStarCreateCancelReasonFactory extends Factory
+class WalletSettingFactory extends Factory
 {
     /**
      * The name of the factory's corresponding model.
      *
      * @var string
      */
-    protected $model = AllStarCreateCancelReason::class;
+    protected $model = WalletSetting::class;
 
     /**
      * Define the model's default state.

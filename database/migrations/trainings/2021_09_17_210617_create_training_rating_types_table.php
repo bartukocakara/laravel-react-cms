@@ -13,8 +13,12 @@ class CreateTrainingRatingTypesTable extends Migration
      */
     public function up()
     {
+        $titleCodes = [ "BAD", "BORING", "MIDDLE", "GOOD", "ENJOY"];
         Schema::create('training_rating_types', function (Blueprint $table) {
             $table->id();
+            $table->string("title");
+            $table->string("description")->nullable(true);
+            $table->string("title_code")->comment(json_encode($titleCodes));
             $table->timestamps();
         });
     }

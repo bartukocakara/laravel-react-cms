@@ -16,10 +16,7 @@ class CreateManagersTable extends Migration
         Schema::create('managers', function (Blueprint $table) {
             $table->id();
             $table->integer("user_id");
-            $table->integer("manager_setting_id");
-            $table->integer("comment_id");
             $table->string("licences");
-            $table->string("rewards");
             $table->timestamps();
         });
     }

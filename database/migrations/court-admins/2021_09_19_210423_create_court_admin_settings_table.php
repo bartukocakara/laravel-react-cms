@@ -18,6 +18,7 @@ class CreateCourtAdminSettingsTable extends Migration
             "is_phone_show_enabled" => [0, 1],
             "is_name_show_enabled" => [0, 1],
             "is_avatar_show_enabled" => [0, 1],
+            "is_court_settings_enabled" => [0, 1],
         ];
         Schema::create('court_admin_settings', function (Blueprint $table) {
             $table->id();

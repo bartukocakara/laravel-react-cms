@@ -21,57 +21,62 @@ Route::get("/getTesting", function (){
 
                     // PLAYER
 Route::get("/players", "PlayerController@getAll");
-Route::get("/players/create", "PlayerController@createPlayerPage");
-Route::post("/players/create", "PlayerController@createPlayerPost");
+Route::match(["get", "post"], "/players/create", "PlayerController@create");
+Route::match(["get", "post"], "/players/{id}/settings", "PlayerController@settings");
+
 
                     // TEAM
 Route::get("/teams", "TeamController@getAll");
-Route::get("/teams/create", "TeamController@createTeamPage");
-Route::post("/teams/create", "TeamController@createTeamPost");
+Route::match(["get", "post"], "/teams/create", "TeamController@create");
+Route::match(["get", "post"], "/teams//{id}/settings", "TeamController@settings");
+
 
                     //COURT
 Route::get("/courts", "CourtController@getAll");
-Route::get("/courts/create", "CourtController@createCourtPage");
-Route::post("/courts/create", "CourtController@createCourtPost");
+Route::match(["get", "post"], "/courts/create", "CourtController@create");
+Route::match(["get", "post"], "/courts/{id}/settings", "CourtController@settings");
+
 
                     //MATCH
 Route::get("/matches", "MatchController@getAll");
-Route::get("/matches/create", "MatchController@createMatchPage");
-Route::post("/matches/create", "MatchController@createMatchPost");
+Route::match(["get", "post"], "/matches/create", "MatchController@create");
+Route::match(["get", "post"], "/matches/{id}/settings", "MatchController@settings");
+
 
                     //TRAINING
 Route::get("/trainings", "TrainingController@getAll");
-Route::get("/trainings/create", "TrainingController@createTrainingPage");
-Route::post("/trainings/create", "TrainingController@createTrainingPost");
+Route::match(["get", "post"], "/trainings/create", "TrainingController@create");
+Route::match(["get", "post"], "/trainings/{id}/settings", "TrainingController@settings");
+
 
                     //TRAINER
 Route::get("/trainers", "TrainerController@getAll");
-Route::get("/trainers/create", "TrainerController@createTrainerPage");
-Route::post("/trainers/create", "TrainerController@createTrainerPost");
+Route::match(["get", "post"], "/trainers/create", "TrainerController@create");
+Route::match(["get", "post"], "/trainers/{id}/settings", "TrainerController@settings");
 
 
                     //TOURNAMENT
 Route::get("/tournaments", "TournamentController@getAll");
-Route::get("/tournaments/create", "TournamentController@createTournamentPost");
-Route::post("/tournaments/create", "TournamentController@createTournamentPage");
+Route::match(["get", "post"], "/tournaments/create", "TournamentController@create");
+Route::match(["get", "post"], "/tournaments/{id}/settings", "TournamentController@settings");
 
 
                     //COURT Admin
 Route::get("/courtAdmin", "CourtAdminController@getAll");
-Route::get("/courtAdmin/create", "CourtAdminController@createCourtAdminPage");
-Route::post("/courtAdmin/create", "CourtAdminController@createCourtAdminPost");
+Route::match(["get", "post"], "/courtAdmin/create", "CourtAdminController@create");
+Route::match(["get", "post"], "/courtAdmin/{id}/settings", "CourtAdminController@settings");
 
 
                     //ALL STAR
 Route::get("/allStars", "AllStarController@getAll");
-Route::get("/allStars/create", "AllStarController@createAllStarPage");
-Route::post("/allStars/create", "AllStarController@createAllStarPost");
+Route::match(["get", "post"], "/allStars/create", "AllStarController@create");
+Route::match(["get", "post"], "/allStars/{id}/settings", "AllStarController@settings");
 
 
                     //REFEREE
 Route::get("/referees", "RefereeController@getAll");
-Route::get("/referees/create", "AllStarController@createRefereePage");
-Route::post("/referees/create", "AllStarController@createRefereePost");
+Route::match(["get", "post"], "/referees/create", "RefereeController@create");
+Route::match(["get", "post"], "/referees/{id}/settings", "RefereeController@settings");
 
 
 
@@ -91,7 +96,7 @@ Route::namespace('Api')->group(function () {
 });
 
 
-                    // TEAM
+                    //TEAM
 
 
 
@@ -114,12 +119,13 @@ Route::namespace('Api')->group(function () {
 
 
 
-                    //COURT Admin
+                    //COURT ADMIN
 
 
 
                     //ALL STAR
 
+                    //REFEREE
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });

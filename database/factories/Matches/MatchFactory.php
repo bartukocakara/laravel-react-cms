@@ -26,7 +26,6 @@ class MatchFactory extends Factory
         return [
             "players" => json_encode($users),
             "teams" => json_encode($teams),
-            "match_settings_id" => $this->faker->randomNumber(null, false),
             "court_id" => $this->faker->randomNumber(null, false),
             "rating_id" => $this->faker->name(),
             "match_category" => $this->faker->randomElement(["STANDARD", "TOURNAMENT", "ALL_STAR"]),
