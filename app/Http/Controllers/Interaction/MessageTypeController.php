@@ -2,10 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Licence;
+use App\Models\MessageType;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 
-class LicenceController extends Controller
+class MessageTypeController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -41,10 +42,10 @@ class LicenceController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Licence  $licence
+     * @param  \App\Models\MessageType  $messageType
      * @return \Illuminate\Http\Response
      */
-    public function show(Licence $licence)
+    public function show(MessageType $messageType)
     {
         //
     }
@@ -52,10 +53,10 @@ class LicenceController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Licence  $licence
+     * @param  \App\Models\MessageType  $messageType
      * @return \Illuminate\Http\Response
      */
-    public function edit(Licence $licence)
+    public function edit(MessageType $messageType)
     {
         //
     }
@@ -64,10 +65,10 @@ class LicenceController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Licence  $licence
+     * @param  \App\Models\MessageType  $messageType
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Licence $licence)
+    public function update(Request $request, MessageType $messageType)
     {
         //
     }
@@ -75,10 +76,10 @@ class LicenceController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Licence  $licence
+     * @param  \App\Models\MessageType  $messageType
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Licence $licence)
+    public function destroy(MessageType $messageType)
     {
         //
     }

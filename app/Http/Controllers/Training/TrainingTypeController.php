@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\TrainingType;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 
 class TrainingTypeController extends Controller
 {

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Referee;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 
 class RefereeController extends Controller
 {
@@ -14,7 +15,7 @@ class RefereeController extends Controller
      */
     public function index()
     {
-        //
+        dd("referee");
     }
 
     /**

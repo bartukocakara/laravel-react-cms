@@ -2,10 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Subscription;
+use App\Models\Video;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 
-class SubscriptionController extends Controller
+class VideoController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -41,10 +42,10 @@ class SubscriptionController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Subscription  $subscription
+     * @param  \App\Models\Video  $video
      * @return \Illuminate\Http\Response
      */
-    public function show(Subscription $subscription)
+    public function show(Video $video)
     {
         //
     }
@@ -52,10 +53,10 @@ class SubscriptionController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Subscription  $subscription
+     * @param  \App\Models\Video  $video
      * @return \Illuminate\Http\Response
      */
-    public function edit(Subscription $subscription)
+    public function edit(Video $video)
     {
         //
     }
@@ -64,10 +65,10 @@ class SubscriptionController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Subscription  $subscription
+     * @param  \App\Models\Video  $video
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Subscription $subscription)
+    public function update(Request $request, Video $video)
     {
         //
     }
@@ -75,10 +76,10 @@ class SubscriptionController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Subscription  $subscription
+     * @param  \App\Models\Video  $video
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Subscription $subscription)
+    public function destroy(Video $video)
     {
         //
     }

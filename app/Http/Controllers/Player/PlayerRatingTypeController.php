@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\PlayerRatingType;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 
 class PlayerRatingTypeController extends Controller
 {

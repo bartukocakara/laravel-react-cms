@@ -2,10 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\MessageType;
+use App\Models\Subscription;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 
-class MessageTypeController extends Controller
+class SubscriptionController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -41,10 +42,10 @@ class MessageTypeController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\MessageType  $messageType
+     * @param  \App\Models\Subscription  $subscription
      * @return \Illuminate\Http\Response
      */
-    public function show(MessageType $messageType)
+    public function show(Subscription $subscription)
     {
         //
     }
@@ -52,10 +53,10 @@ class MessageTypeController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\MessageType  $messageType
+     * @param  \App\Models\Subscription  $subscription
      * @return \Illuminate\Http\Response
      */
-    public function edit(MessageType $messageType)
+    public function edit(Subscription $subscription)
     {
         //
     }
@@ -64,10 +65,10 @@ class MessageTypeController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\MessageType  $messageType
+     * @param  \App\Models\Subscription  $subscription
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, MessageType $messageType)
+    public function update(Request $request, Subscription $subscription)
     {
         //
     }
@@ -75,10 +76,10 @@ class MessageTypeController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\MessageType  $messageType
+     * @param  \App\Models\Subscription  $subscription
      * @return \Illuminate\Http\Response
      */
-    public function destroy(MessageType $messageType)
+    public function destroy(Subscription $subscription)
     {
         //
     }

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Coach;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 
 class CoachController extends Controller
 {

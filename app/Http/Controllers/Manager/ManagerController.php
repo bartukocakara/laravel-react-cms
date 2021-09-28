@@ -1,9 +1,10 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Manager;
 
 use App\Models\Manager;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 
 class ManagerController extends Controller
 {
@@ -14,7 +15,7 @@ class ManagerController extends Controller
      */
     public function index()
     {
-        //
+        dd("manager");
     }
 
     /**

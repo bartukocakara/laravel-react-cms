@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\ManagerSetting;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 
 class ManagerSettingController extends Controller
 {
