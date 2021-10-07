@@ -1,0 +1,38 @@
+<?php
+interface UserInterface {
+
+    public function getName();
+
+}
+
+class User extends \Eloquent implements UserInterface {
+
+    protected $table = 'users';
+
+    public function getName()
+    {
+        return $this->name;
+    }
+
+}
+
+class Student extends \Eloquent implements UserInterface {
+
+    protected $table = 'students';
+
+    public function getName()
+    {
+        return $this->name;
+    }
+
+    public function courses()
+    {
+        return $this->belongsToMany('Course');
+    }
+
+    public function grades()
+    {
+        return $this->hasMany('Grade');
+    }
+
+}

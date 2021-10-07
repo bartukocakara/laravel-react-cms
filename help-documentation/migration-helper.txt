@@ -1,0 +1,5 @@
+php artisan migrate --path=/database/migrations/selected/
+
+php artisan tinker
+
+    Player::factory()->count(50)->create()

@@ -23,7 +23,8 @@ class UserFactory extends Factory
     public function definition()
     {
         $name = $this->faker->name();
-        $slug = str_slug($name, '-');
+        $slug = Str::slug($name, '-');
+        dd($name, $slug);
         return [
             'country_id' => $this->faker->numberBetween(),
             'city_id' => $this->faker->numberBetween(),
