@@ -22,7 +22,7 @@ class PlayerFakerFactory extends Factory
     public function definition()
     {
         return [
-            "user_id" => $this->faker->name(),
+            "user_id" => User::all()->random()->id,
             "positions" => $this->faker->name(),
             "settings" => $this->faker->name(),
             "name" => $this->faker->name(),

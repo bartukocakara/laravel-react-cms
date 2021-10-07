@@ -22,7 +22,7 @@ class CoachFactory extends Factory
     public function definition()
     {
         return [
-            "user_id" => $this->faker->numberBetween(1, 100),
+            "user_id" => User::all()->random()->id,
             "coach_setting_id" => $this->faker->numberBetween(1, 100),
             "comment_id" => $this->faker->numberBetween(1, 100),
             "licences" => $this->faker->randomElement([1, 2, 3], [3, 5 ,7], [3, 5 ,9, 10]),

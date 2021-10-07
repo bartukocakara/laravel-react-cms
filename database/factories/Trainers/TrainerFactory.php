@@ -29,7 +29,7 @@ class TrainerFakerFactory extends Factory
             $i++;
         }
         return [
-            "user_id" => $this->faker->randomDigit,
+            "user_id" => User::all()->random()->id,
             "rating_id" => $this->faker->randomDigit,
             "status_id" => $this->faker->randomDigit,
             "training_types" => $this->faker->name(),

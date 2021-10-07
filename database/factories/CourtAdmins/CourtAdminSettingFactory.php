@@ -28,6 +28,7 @@ class CourtAdminSettingFactory extends Factory
             "is_avatar_show_enabled" => $this->faker->randomElement([0, 1])
         ];
         return [
+            "user_id" => User::all()->random()->id,
             "privacy" => json_encode($privacy),
         ];
     }
