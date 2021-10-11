@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Models\Court;
+namespace App\Models\Business;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class CourtContract extends Model
+class MembershipType extends Model
 {
     use HasFactory;
 }

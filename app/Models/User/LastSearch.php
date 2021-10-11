@@ -1,11 +1,14 @@
 <?php
 
-namespace App\Models\Court;
+namespace App\Models\User;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class CourtContract extends Model
+class LastSearch extends Model
 {
     use HasFactory;
+
+    protected $table = "last_searches";
+
 }

@@ -1,11 +1,10 @@
 <?php
 
-namespace App\Models;
+namespace App\Models\Referee;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Illuminate\Database\Eloquent\Model;
 
-class Referee extends Model
+class Referee extends User
 {
     use HasFactory;
 

@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Models\Court;
+namespace App\Models\Team;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class CourtContract extends Model
+class TeamRequestHistory extends Model
 {
     use HasFactory;
 }

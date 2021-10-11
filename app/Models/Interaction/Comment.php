@@ -1,11 +1,13 @@
 <?php
 
-namespace App\Models\Court;
+namespace App\Models\Interaction;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class CourtContract extends Model
+class Comment extends Model
 {
     use HasFactory;
+
+    protected $table = "comments";
 }

@@ -58,10 +58,14 @@ class CreatePlayersTable extends Migration
         $positions = ["PG", "SG", "SF", "PF", "C"];
         Schema::create('players', function (Blueprint $table) {
             $table->id();
-            $table->integer("user_id");
+            $table->integer("user_id")->unsigned();
             $table->string("positions")->comment( json_encode($positions) );
             $table->string("create_match_options")->comment(json_encode($createMatchOptions));
             $table->string("statistics")->comment(json_encode($statistics));
+            $table->foreign('user_id')
+                ->references('id')
+                ->on('users')
+                ->onDelete('cascade');
             $table->timestamps();
         });
     }

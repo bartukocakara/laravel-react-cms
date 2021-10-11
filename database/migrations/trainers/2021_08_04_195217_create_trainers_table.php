@@ -16,13 +16,17 @@ class CreateTrainersTable extends Migration
         $idList = ["1,3,2,8,9,12"];
         Schema::create('trainers', function (Blueprint $table) {
             $table->id();
-            $table->integer("user_id");
+            $table->integer("user_id")->unsigned();
             $table->integer("status_id");
             $table->text("training_types")->comment("training_types : ". json_encode($idList));
             $table->text("licences")->comment("exm : ".json_encode($idList));
             $table->text('favourite_players')->comment("exm : ".json_encode($idList));
             $table->text('favourite_teams')->comment("exm : ".json_encode($idList));
             $table->text('videos')->comment("exm : ".json_encode($idList));
+            $table->foreign('user_id')
+                ->references('id')
+                ->on('users')
+                ->onDelete('cascade');
             $table->timestamps();
         });
     }

@@ -3,9 +3,8 @@
 namespace App\Models\Manager;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Illuminate\Database\Eloquent\Model;
 
-class Manager extends Model
+class Manager extends User
 {
     use HasFactory;
 
